@@ -1,0 +1,12 @@
+[submodule "themes/bootstrap"]
+	path = themes/bootstrap
+	url = https://github.com/razonyang/hugo-theme-bootstrap
+[submodule "themes/papermod"]
+	path = themes/papermod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/hugo-theme-bootstrap"]
+	path = themes/hugo-theme-bootstrap
+	url = https://github.com/razonyang/hugo-theme-bootstrap.git
+[submodule "themes/whisper"]
+	path = themes/whisper
+	url = https://github.com/jugglerx/hugo-whisper-theme.git

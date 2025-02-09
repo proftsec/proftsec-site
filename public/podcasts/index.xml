@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Podcasts on Proftsec</title>
+    <link>http://localhost:1313/podcasts/</link>
+    <description>Recent content in Podcasts on Proftsec</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/podcasts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Cybersecurity Readiness Podcast</title>
+      <link>http://localhost:1313/podcasts/cybersecurity-readiness-podcast/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/podcasts/cybersecurity-readiness-podcast/</guid>
+      <description>Discussions on preparing for and responding to cybersecurity threats.</description>
+    </item>
+    <item>
+      <title>Darknet Diaries</title>
+      <link>http://localhost:1313/podcasts/darknet-diaries/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/podcasts/darknet-diaries/</guid>
+      <description>True stories from the dark side of the Internet.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+baseURL = "http://localhost/"
+languageCode = "en-us"
+title = "Proftsec"
+theme = "papermod"
+
+[params]
+  favicon = "favicon.ico"
+  description = "Cybersecurity Insights and Projects"
+  mainSections = ["_index"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params.label]
+  icon = "images/logo.webp"
+  iconHeight = 40
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+
+ [[menu.main]]
+    name = "Podcasts"
+    url = "/podcasts/"
+    weight = 5
