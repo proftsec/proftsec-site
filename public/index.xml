@@ -6,8 +6,29 @@
     <description>Recent content in Welcome to Proftsec on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging, Syntax Checking, and Log Analysis Lab</title>
+      <link>http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/</guid>
+      <description>Hands-on exercises to identify and troubleshoot syntax errors using logs and debugging mechanisms.</description>
+    </item>
+    <item>
+      <title>Fundamentals of Linux Lab</title>
+      <link>http://localhost:1313/projects/fundamentals-of-linux/lab/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/fundamentals-of-linux/lab/</guid>
+      <description>Hands-on exercises covering essential Linux commands.</description>
+    </item>
+    <item>
+      <title>Virtualization &amp; Cloud Basics Lab</title>
+      <link>http://localhost:1313/projects/virtualizationcloudbasics/lab/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/virtualizationcloudbasics/lab/</guid>
+      <description>Hands-on exercises for setting up and managing virtual machines and cloud environments.</description>
+    </item>
     <item>
       <title>The Cybersecurity Readiness Podcast</title>
       <link>http://localhost:1313/podcasts/cybersecurity-readiness-podcast/</link>
@@ -21,13 +42,6 @@
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/podcasts/darknet-diaries/</guid>
       <description>True stories from the dark side of the Internet.</description>
-    </item>
-    <item>
-      <title>Project 1:Fundamentals of Linux</title>
-      <link>http://localhost:1313/projects/project-1/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/project-1/</guid>
-      <description>Master the foundational skills of Linux, including file management and command-line tools.</description>
     </item>
   </channel>
 </rss>

@@ -58,6 +58,6 @@ Includes a direct course access link to structured tutorials, exercises, and add
 Designed to benefit both beginners and experienced users looking to refine Linux skills.
 
 **Installation:**  
-Follow the detailed [setup guide here](/projects/project-1).
+Follow the detailed [setup guide here](/projects/).
 
 ---
