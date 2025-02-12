@@ -1,7 +1,7 @@
 baseURL = "https://proftsec.info"
 languageCode = "en-us"
 title = "Proftsec"
-theme = "papermod"
+theme = "custom-theme"
 
 [params]
   favicon = "favicon.ico"

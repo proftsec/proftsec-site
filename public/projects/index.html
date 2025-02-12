@@ -59,7 +59,28 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="list" id="top"><script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -68,7 +89,6 @@
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
-
 </script>
 
 <header class="header">
@@ -102,22 +122,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="http://localhost:1313/about/">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/projects/" title="Projects">
-                    <span class="active">Projects</span>
+                <a href="http://localhost:1313/projects/">
+                    <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blog/" title="Blog">
+                <a href="http://localhost:1313/blog/">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/podcasts/" title="Podcasts">
+                <a href="http://localhost:1313/podcasts/">
                     <span>Podcasts</span>
                 </a>
             </li>
@@ -129,49 +149,7 @@
   <h1>
     Projects
   </h1>
-</header>  
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Project 1: Fundamentals of Linux
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Fundamentals of Linux Overview The Linux operating system is widely used in cybersecurity and IT infrastructure. It offers numerous security auditing tools not available on Windows. This project introduces students to Linux, allowing them to become comfortable with basic navigation, file operations, and essential commands for security analysis.
-What You Will Learn Navigating the Linux file system Copying, deleting, and moving files and directories Searching for text within files Retrieving network configuration details Editing files using Nano Identifying logged-in users Writing simple Bash scripts Virtualization Options Before diving into the hands-on exercises, make sure you have access to a Linux environment. You can choose one of the following:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Project 1: Fundamentals of Linux" href="http://localhost:1313/projects/fundamentals-of-linux/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Project 2: Virtualization &amp; Cloud Basics
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Virtualization &amp; Cloud Basics Overview Understanding virtualization is essential for modern IT and cybersecurity. This project introduces students to virtual machines (VMs), cloud computing, and containers, helping them build the skills required to deploy and manage virtual environments.
-What You Will Learn Setting up virtual machines using VirtualBox, Hyper-V, or VMware Understanding cloud computing concepts (AWS, Azure, GCP) Working with containers (Docker Basics) Remote access using SSH and networking Snapshotting, exporting, and restoring environments Self-Check: Test Your Virtualization Knowledge Before proceeding to the full lab, try answering these:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Project 2: Virtualization & Cloud Basics" href="http://localhost:1313/projects/virtualizationcloudbasics/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Project 3: Debugging, Syntax Checking, and Log Analysis
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Debugging, Syntax Checking, and Log Analysis Overview Debugging is a critical skill in system administration and cybersecurity. This project will teach you how to recognize common syntax errors, interpret error messages, analyze system logs, and implement debugging techniques to verify the correctness of scripts and configurations.
-What You Will Learn Recognizing common syntax errors in Bash, Python, YAML, JSON, and configuration files. Using logs (/var/log/, journalctl) to troubleshoot system and application issues. Applying syntax checkers (bash -n, yamllint, jq, python3 -m py_compile). Creating logging mechanisms to track script execution and errors. Automating error detection to prevent issues before deployment. Self-Check: Debugging &amp; Troubleshooting Readiness Before proceeding to the full lab, try answering these:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Project 3: Debugging, Syntax Checking, and Log Analysis" href="http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/"></a>
-</article>
+</header>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -219,29 +197,119 @@ Interactive Course Highlights What topics are covered?Using Nmap to scan networ
   <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
   <a class="entry-link" aria-label="post link to Project 6: Network & Vulnerability Scanning" href="http://localhost:1313/projects/networkvulnerability-scanning/"></a>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Project 1: Fundamentals of Linux
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Fundamentals of Linux Overview The Linux operating system is widely used in cybersecurity and IT infrastructure. It offers numerous security auditing tools not available on Windows. This project introduces students to Linux, allowing them to become comfortable with basic navigation, file operations, and essential commands for security analysis.
+What You Will Learn Navigating the Linux file system Copying, deleting, and moving files and directories Searching for text within files Retrieving network configuration details Editing files using Nano Identifying logged-in users Writing simple Bash scripts Virtualization Options Before diving into the hands-on exercises, make sure you have access to a Linux environment. You can choose one of the following:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Project 1: Fundamentals of Linux" href="http://localhost:1313/projects/fundamentals-of-linux/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Project 2: Virtualization &amp; Cloud Basics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Virtualization &amp; Cloud Basics Overview Understanding virtualization is essential for modern IT and cybersecurity. This project introduces students to virtual machines (VMs), cloud computing, and containers, helping them build the skills required to deploy and manage virtual environments.
+What You Will Learn Setting up virtual machines using VirtualBox, Hyper-V, or VMware Understanding cloud computing concepts (AWS, Azure, GCP) Working with containers (Docker Basics) Remote access using SSH and networking Snapshotting, exporting, and restoring environments Self-Check: Test Your Virtualization Knowledge Before proceeding to the full lab, try answering these:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Project 2: Virtualization & Cloud Basics" href="http://localhost:1313/projects/virtualizationcloudbasics/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Project 3: Debugging, Syntax Checking, and Log Analysis
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Debugging, Syntax Checking, and Log Analysis Overview Debugging is a critical skill in system administration and cybersecurity. This project will teach you how to recognize common syntax errors, interpret error messages, analyze system logs, and implement debugging techniques to verify the correctness of scripts and configurations.
+What You Will Learn Recognizing common syntax errors in Bash, Python, YAML, JSON, and configuration files. Using logs (/var/log/, journalctl) to troubleshoot system and application issues. Applying syntax checkers (bash -n, yamllint, jq, python3 -m py_compile). Creating logging mechanisms to track script execution and errors. Automating error detection to prevent issues before deployment. Self-Check: Debugging &amp; Troubleshooting Readiness Before proceeding to the full lab, try answering these:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Project 3: Debugging, Syntax Checking, and Log Analysis" href="http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/"></a>
+</article>
     </main>
     
 <footer class="footer">
-    <div class="footer-content">
-                <span>&copy; 2025 <a href="http://localhost:1313/">Proftsec</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Proftsec</a></span> · 
 
-        <span>
-            Powered by
-            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> & 
-            <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-        </span>
-    </div>
-
-    
-    <div class="explore-more">
-        <nav class="explore-nav">
-            <a href="http://localhost:1313/projects/"> 💻 Projects</a>
-            <a href="http://localhost:1313/blog/"> 📝 Blog</a>
-            <a href="http://localhost:1313/podcasts/"> 🎙 Podcasts</a>
-            <a href="http://localhost:1313/about/"> 📩 About</a>
-        </nav>
-    </div>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
 
 </html>
