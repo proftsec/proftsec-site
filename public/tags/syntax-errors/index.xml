@@ -6,7 +6,14 @@
     <description>Recent content in Syntax Errors on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/syntax-errors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging, Syntax Checking, and Log Analysis Lab</title>
+      <link>http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/</guid>
+      <description>Hands-on exercises to identify and troubleshoot syntax errors using logs and debugging mechanisms.</description>
+    </item>
   </channel>
 </rss>

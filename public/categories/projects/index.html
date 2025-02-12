@@ -129,20 +129,67 @@
   <h1>
     Projects
   </h1>
-</header>
+</header>  
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Fundamentals of Linux
+    <h2 class="entry-hint-parent">Debugging, Syntax Checking, and Log Analysis Lab
     </h2>
   </header>
   <div class="entry-content">
-    <p>Fundamentals of Linux Purpose The Linux operating system is widely used in cybersecurity and IT infrastructure. It offers numerous security auditing tools not available on Windows. This project introduces students to Linux, allowing them to become comfortable with basic navigation, file operations, and essential commands for security analysis.
-Virtualization Options To complete this assignment, you will need access to a Linux environment. You can choose one of the following options:
+    <p>Debugging, Syntax Checking, and Log Analysis Lab Recognizing Common Syntax Errors Syntax errors can cause scripts to fail, commands to be misinterpreted, and configurations to break. Below are common errors and ways to troubleshoot them.
+1️⃣ Bash Scripting Errors &amp; Fixes Example 1: Missing Shebang (#!/bin/bash)
+# Wrong echo &#34;Hello, World!&#34; Fix: Add #!/bin/bash at the top.
+#!/bin/bash echo &#34;Hello, World!&#34; Debugging Method: Check if the script runs with the correct interpreter.
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Fundamentals of Linux" href="http://localhost:1313/projects/fundamentals-of-linux/lab/"></a>
+  <a class="entry-link" aria-label="post link to Debugging, Syntax Checking, and Log Analysis Lab" href="http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fundamentals of Linux Lab
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Fundamentals of Linux Lab Setting Up Your Linux Environment Follow these steps to set up your Debian system:
+Download and Install VirtualBox
+Install VirtualBox and create a new VM. Download the Debian ISO and install it on your VM. Alternative Setup Options
+Hyper-V (Windows Server 2019 Option) WSL 2 (Windows Subsystem for Linux) AWS or Azure Cloud Instances Boot into Debian Linux
+Power on the VM and log in. Open a terminal window. Network Configuration Check Your IP Address ip address show This command displays network details, including IP addresses and interface names.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Fundamentals of Linux Lab" href="http://localhost:1313/projects/fundamentals-of-linux/lab/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Virtualization &amp; Cloud Basics Lab
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Virtualization &amp; Cloud Basics Lab Setting Up Your Virtual Environment Follow these steps to set up your virtualization platform:
+1. Choosing Your Virtualization Platform Select one of the following options to create a virtual machine:
+VirtualBox (Recommended for most users) Hyper-V (For Windows Pro/Enterprise users) VMware Workstation Player Cloud Instances (AWS, Azure, GCP) 2. Installing a Virtual Machine Download Ubuntu or Debian ISO from the official site. Create a new virtual machine in your chosen platform. Allocate 2&#43; CPU cores, 4GB RAM, and 20GB storage. Boot the VM and install the operating system. Working with Virtual Machines 3. Managing VM Snapshots Take a snapshot before making system changes. Restore a previous snapshot if something breaks. Export VM configurations for backup. 4. Remote Access with SSH Enable SSH on your virtual machine: sudo apt update &amp;&amp; sudo apt install openssh-server sudo systemctl enable ssh sudo systemctl start ssh Find your VM’s IP address: ip a Connect from your host machine: ssh user@&lt;vm-ip-address&gt; Introduction to Containers 5. Setting Up Docker (Optional but Recommended) Install Docker: sudo apt update &amp;&amp; sudo apt install docker.io -y sudo systemctl enable docker sudo systemctl start docker Run a simple container: docker run hello-world List running containers: docker ps Self-Check: Virtualization &amp; Cloud Mastery Try answering these questions:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Virtualization & Cloud Basics Lab" href="http://localhost:1313/projects/virtualizationcloudbasics/lab/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Networking Essentials &amp; Security Lab
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Networking Essentials &amp; Security Lab 1️⃣ Capturing and Analyzing Network Traffic with Wireshark Step 1: Install Wireshark Download and install Wireshark from Wireshark.org. Ensure you have the necessary permissions to capture network traffic. Step 2: Capture Network Traffic Open Wireshark and select your network interface. Click Start Capture and browse websites to generate traffic. Stop the capture after 2 minutes. Step 3: Filter and Analyze Packets Use tcp, udp, or http as display filters. Locate and inspect HTTP packets to identify unencrypted traffic. Use Follow TCP Stream to view communication between clients and servers. Step 4: Identifying Security Risks Locate an HTTP login request and extract credentials. Compare it to an HTTPS request to observe encryption. 2️⃣ Configuring a Secure VPN with WireGuard Step 1: Install WireGuard On Debian Linux:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Networking Essentials & Security Lab" href="http://localhost:1313/projects/networking-essentialssecurity/lab/"></a>
 </article>
     </main>
     

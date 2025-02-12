@@ -1,0 +1,104 @@
+---
+title: "Advanced Linux Administration & Security"
+description: "Hands-on lab covering advanced Linux system administration, automation, and security techniques."
+date: 2025-02-11
+tags: ["Linux", "Administration", "Security", "Automation"]
+categories: ["Projects"]
+menu:
+  main:
+    parent: "Projects"
+    weight: 5
+draft: false
+---
+
+# **Advanced Linux Administration & Security Lab**
+
+## **Lab Setup**
+1. **Environment**:  
+   - Use **VirtualBox, Hyper-V, VMware, or a cloud-based Linux instance** (Debian, Ubuntu, or CentOS).
+   - Install necessary tools:
+     ```bash
+     sudo apt update && sudo apt install lynis htop tmux ufw -y
+     ```
+
+2. **System Performance Monitoring**
+   - Monitor real-time system performance:
+     ```bash
+     top
+     htop
+     vmstat 5 10
+     ```
+
+3. **Process & Service Management**
+   - List all running services:
+     ```bash
+     systemctl list-units --type=service
+     ```
+   - Restart a failed service:
+     ```bash
+     sudo systemctl restart apache2
+     ```
+
+4. **Advanced Bash Scripting**
+   - Create a script to log disk space usage:
+     ```bash
+     #!/bin/bash
+     df -h > /var/log/disk_usage.log
+     ```
+   - Automate it with cron:
+     ```bash
+     crontab -e
+     ```
+     Add:
+     ```
+     0 * * * * /home/user/disk_monitor.sh
+     ```
+
+5. **Networking & Firewall Security**
+   - Check open network connections:
+     ```bash
+     ss -tulnp
+     ```
+   - Block inbound SSH (for security):
+     ```bash
+     sudo ufw deny 22
+     ```
+
+6. **Security Hardening**
+   - Audit system security:
+     ```bash
+     sudo lynis audit system
+     ```
+   - Set strict file permissions:
+     ```bash
+     sudo chmod 750 /secure_data
+     ```
+
+7. **Log Analysis & Troubleshooting**
+   - Find failed SSH login attempts:
+     ```bash
+     sudo journalctl -u sshd | grep "Failed password"
+     ```
+   - Monitor system logs:
+     ```bash
+     sudo tail -f /var/log/syslog
+     ```
+
+## **Lab Completion Tasks**
+📸 **Screenshots Required:**
+- Running performance monitoring tools (`htop`, `vmstat`).
+- A custom Bash script in action.
+- Network security settings (`ufw`, `iptables`).
+- Results of a security audit (`Lynis`).
+- Log analysis of failed logins.
+
+📝 **Reflection Questions:**
+1. What was the most difficult part of this project?
+2. How do security hardening techniques help prevent attacks?
+3. How can automation improve system administration?
+
+## **Next Steps**
+This lab reinforces **real-world Linux administration and security skills**. Continue exploring **server hardening, automation, and intrusion detection** to advance your expertise.
+
+---
+💾 [⬅️ Back to Project Page](../)
