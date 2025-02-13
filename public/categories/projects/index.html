@@ -18,6 +18,30 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/projects/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/categories/projects/">
 <noscript>
@@ -59,7 +83,28 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="list" id="top"><script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -68,7 +113,6 @@
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
-
 </script>
 
 <header class="header">
@@ -102,22 +146,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="http://localhost:1313/about/">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/projects/" title="Projects">
+                <a href="http://localhost:1313/projects/">
                     <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blog/" title="Blog">
+                <a href="http://localhost:1313/blog/">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/podcasts/" title="Podcasts">
+                <a href="http://localhost:1313/podcasts/">
                     <span>Podcasts</span>
                 </a>
             </li>
@@ -130,35 +174,6 @@
     Projects
   </h1>
 </header>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Advanced Linux Administration &amp; Security
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Advanced Linux Administration &amp; Security Lab Lab Setup Environment:
-Use VirtualBox, Hyper-V, VMware, or a cloud-based Linux instance (Debian, Ubuntu, or CentOS). Install necessary tools: sudo apt update &amp;&amp; sudo apt install lynis htop tmux ufw -y System Performance Monitoring
-Monitor real-time system performance: top htop vmstat 5 10 Process &amp; Service Management
-List all running services: systemctl list-units --type=service Restart a failed service: sudo systemctl restart apache2 Advanced Bash Scripting
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Advanced Linux Administration & Security" href="http://localhost:1313/projects/advanced-linux/lab/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Networking Essentials &amp; Security Lab
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Networking Essentials &amp; Security Lab 1️⃣ Capturing and Analyzing Network Traffic with Wireshark Step 1: Install Wireshark Download and install Wireshark from Wireshark.org. Ensure you have the necessary permissions to capture network traffic. Step 2: Capture Network Traffic Open Wireshark and select your network interface. Click Start Capture and browse websites to generate traffic. Stop the capture after 2 minutes. Step 3: Filter and Analyze Packets Use tcp, udp, or http as display filters. Locate and inspect HTTP packets to identify unencrypted traffic. Use Follow TCP Stream to view communication between clients and servers. Step 4: Identifying Security Risks Locate an HTTP login request and extract credentials. Compare it to an HTTPS request to observe encryption. 2️⃣ Configuring a Secure VPN with WireGuard Step 1: Install WireGuard On Debian Linux:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Networking Essentials & Security Lab" href="http://localhost:1313/projects/networking-essentialssecurity/lab/"></a>
-</article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
@@ -206,6 +221,35 @@ VirtualBox (Recommended for most users) Hyper-V (For Windows Pro/Enterprise user
   </div>
   <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
   <a class="entry-link" aria-label="post link to Virtualization & Cloud Basics Lab" href="http://localhost:1313/projects/virtualizationcloudbasics/lab/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Advanced Linux Administration &amp; Security
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Advanced Linux Administration &amp; Security Lab Lab Setup Environment:
+Use VirtualBox, Hyper-V, VMware, or a cloud-based Linux instance (Debian, Ubuntu, or CentOS). Install necessary tools: sudo apt update &amp;&amp; sudo apt install lynis htop tmux ufw -y System Performance Monitoring
+Monitor real-time system performance: top htop vmstat 5 10 Process &amp; Service Management
+List all running services: systemctl list-units --type=service Restart a failed service: sudo systemctl restart apache2 Advanced Bash Scripting
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Advanced Linux Administration & Security" href="http://localhost:1313/projects/advanced-linux/lab/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Networking Essentials &amp; Security Lab
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Networking Essentials &amp; Security Lab 1️⃣ Capturing and Analyzing Network Traffic with Wireshark Step 1: Install Wireshark Download and install Wireshark from Wireshark.org. Ensure you have the necessary permissions to capture network traffic. Step 2: Capture Network Traffic Open Wireshark and select your network interface. Click Start Capture and browse websites to generate traffic. Stop the capture after 2 minutes. Step 3: Filter and Analyze Packets Use tcp, udp, or http as display filters. Locate and inspect HTTP packets to identify unencrypted traffic. Use Follow TCP Stream to view communication between clients and servers. Step 4: Identifying Security Risks Locate an HTTP login request and extract credentials. Compare it to an HTTPS request to observe encryption. 2️⃣ Configuring a Secure VPN with WireGuard Step 1: Install WireGuard On Debian Linux:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Networking Essentials & Security Lab" href="http://localhost:1313/projects/networking-essentialssecurity/lab/"></a>
 </article>
     </main>
     

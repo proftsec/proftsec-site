@@ -18,6 +18,30 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/podcasts/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/podcasts/">
 <noscript>
@@ -160,20 +184,6 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">The Cybersecurity Readiness Podcast
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>About The Cybersecurity Readiness Podcast This podcast features discussions on how organizations can prepare for and respond to various cybersecurity threats.
-Visit Podcast Website
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-01-20 00:00:00 +0000 UTC'>January 20, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to The Cybersecurity Readiness Podcast" href="http://localhost:1313/podcasts/cybersecurity-readiness-podcast/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2 class="entry-hint-parent">Darknet Diaries
     </h2>
   </header>
@@ -184,6 +194,20 @@ Visit Podcast Website
   </div>
   <footer class="entry-footer"><span title='2025-01-10 00:00:00 +0000 UTC'>January 10, 2025</span></footer>
   <a class="entry-link" aria-label="post link to Darknet Diaries" href="http://localhost:1313/podcasts/darknet-diaries/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Cybersecurity Readiness Podcast
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>About The Cybersecurity Readiness Podcast This podcast features discussions on how organizations can prepare for and respond to various cybersecurity threats.
+Visit Podcast Website
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-20 00:00:00 +0000 UTC'>January 20, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to The Cybersecurity Readiness Podcast" href="http://localhost:1313/podcasts/cybersecurity-readiness-podcast/"></a>
 </article>
     </main>
     
