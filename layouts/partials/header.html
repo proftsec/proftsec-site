@@ -1,26 +1,3 @@
-<script>
-    fetch('/.netlify/functions/get-ga-id')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(id => {
-            if (!id || id === "No GA ID found") {
-                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
-                return;
-            }
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', id);
-        })
-        .catch(error => console.error("Error loading GA4 ID:", error));
-</script>
-
 {{- /* theme-toggle is enabled */}}
 {{- if (not site.Params.disableThemeToggle) }}
 {{- /* theme is light */}}
