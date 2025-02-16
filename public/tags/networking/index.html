@@ -18,6 +18,31 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
+
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/networking/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/networking/">
 <noscript>
@@ -132,19 +157,6 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Networking Essentials &amp; Security Lab
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Networking Essentials &amp; Security Lab 1️⃣ Capturing and Analyzing Network Traffic with Wireshark Step 1: Install Wireshark Download and install Wireshark from Wireshark.org. Ensure you have the necessary permissions to capture network traffic. Step 2: Capture Network Traffic Open Wireshark and select your network interface. Click Start Capture and browse websites to generate traffic. Stop the capture after 2 minutes. Step 3: Filter and Analyze Packets Use tcp, udp, or http as display filters. Locate and inspect HTTP packets to identify unencrypted traffic. Use Follow TCP Stream to view communication between clients and servers. Step 4: Identifying Security Risks Locate an HTTP login request and extract credentials. Compare it to an HTTPS request to observe encryption. 2️⃣ Configuring a Secure VPN with WireGuard Step 1: Install WireGuard On Debian Linux:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Networking Essentials & Security Lab" href="http://localhost:1313/projects/networking-essentialssecurity/lab/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
     <h2 class="entry-hint-parent">Fundamentals of Linux Lab
     </h2>
   </header>
@@ -158,6 +170,19 @@ Power on the VM and log in. Open a terminal window. Network Configuration Check 
   </div>
   <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
   <a class="entry-link" aria-label="post link to Fundamentals of Linux Lab" href="http://localhost:1313/projects/fundamentals-of-linux/lab/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Networking Essentials &amp; Security Lab
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Networking Essentials &amp; Security Lab 1️⃣ Capturing and Analyzing Network Traffic with Wireshark Step 1: Install Wireshark Download and install Wireshark from Wireshark.org. Ensure you have the necessary permissions to capture network traffic. Step 2: Capture Network Traffic Open Wireshark and select your network interface. Click Start Capture and browse websites to generate traffic. Stop the capture after 2 minutes. Step 3: Filter and Analyze Packets Use tcp, udp, or http as display filters. Locate and inspect HTTP packets to identify unencrypted traffic. Use Follow TCP Stream to view communication between clients and servers. Step 4: Identifying Security Risks Locate an HTTP login request and extract credentials. Compare it to an HTTPS request to observe encryption. 2️⃣ Configuring a Secure VPN with WireGuard Step 1: Install WireGuard On Debian Linux:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Networking Essentials & Security Lab" href="http://localhost:1313/projects/networking-essentialssecurity/lab/"></a>
 </article>
     </main>
     

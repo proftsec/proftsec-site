@@ -18,6 +18,31 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
+
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/about/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/about/">
 <noscript>

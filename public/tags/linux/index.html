@@ -18,6 +18,31 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
+
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/linux/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/linux/">
 <noscript>
@@ -132,22 +157,6 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Advanced Linux Administration &amp; Security
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Advanced Linux Administration &amp; Security Lab Lab Setup Environment:
-Use VirtualBox, Hyper-V, VMware, or a cloud-based Linux instance (Debian, Ubuntu, or CentOS). Install necessary tools: sudo apt update &amp;&amp; sudo apt install lynis htop tmux ufw -y System Performance Monitoring
-Monitor real-time system performance: top htop vmstat 5 10 Process &amp; Service Management
-List all running services: systemctl list-units --type=service Restart a failed service: sudo systemctl restart apache2 Advanced Bash Scripting
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Advanced Linux Administration & Security" href="http://localhost:1313/projects/advanced-linux/lab/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
     <h2 class="entry-hint-parent">Fundamentals of Linux Lab
     </h2>
   </header>
@@ -161,6 +170,22 @@ Power on the VM and log in. Open a terminal window. Network Configuration Check 
   </div>
   <footer class="entry-footer"><span title='2025-02-09 00:00:00 +0000 UTC'>February 9, 2025</span></footer>
   <a class="entry-link" aria-label="post link to Fundamentals of Linux Lab" href="http://localhost:1313/projects/fundamentals-of-linux/lab/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Advanced Linux Administration &amp; Security
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Advanced Linux Administration &amp; Security Lab Lab Setup Environment:
+Use VirtualBox, Hyper-V, VMware, or a cloud-based Linux instance (Debian, Ubuntu, or CentOS). Install necessary tools: sudo apt update &amp;&amp; sudo apt install lynis htop tmux ufw -y System Performance Monitoring
+Monitor real-time system performance: top htop vmstat 5 10 Process &amp; Service Management
+List all running services: systemctl list-units --type=service Restart a failed service: sudo systemctl restart apache2 Advanced Bash Scripting
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-11 00:00:00 +0000 UTC'>February 11, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Advanced Linux Administration & Security" href="http://localhost:1313/projects/advanced-linux/lab/"></a>
 </article>
     </main>
     
