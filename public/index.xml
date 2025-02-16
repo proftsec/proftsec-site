@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Welcome to Proftsec on Proftsec</title>
-    <link>http://localhost:1313/</link>
+    <link>https://proftsec.info/</link>
     <description>Recent content in Welcome to Proftsec on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://proftsec.info/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced Linux Administration &amp; Security</title>
-      <link>http://localhost:1313/projects/advanced-linux/lab/</link>
+      <link>https://proftsec.info/projects/advanced-linux/lab/</link>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/advanced-linux/lab/</guid>
+      <guid>https://proftsec.info/projects/advanced-linux/lab/</guid>
       <description>Hands-on lab covering advanced Linux system administration, automation, and security techniques.</description>
     </item>
     <item>
       <title>Networking Essentials &amp; Security Lab</title>
-      <link>http://localhost:1313/projects/networking-essentialssecurity/lab/</link>
+      <link>https://proftsec.info/projects/networking-essentialssecurity/lab/</link>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/networking-essentialssecurity/lab/</guid>
+      <guid>https://proftsec.info/projects/networking-essentialssecurity/lab/</guid>
       <description>Hands-on exercises for analyzing network traffic with Wireshark and configuring a secure WireGuard VPN.</description>
     </item>
     <item>
       <title>Debugging, Syntax Checking, and Log Analysis Lab</title>
-      <link>http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/</link>
+      <link>https://proftsec.info/projects/debugging-syntax-checking-and-log-analysis/lab/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/</guid>
+      <guid>https://proftsec.info/projects/debugging-syntax-checking-and-log-analysis/lab/</guid>
       <description>Hands-on exercises to identify and troubleshoot syntax errors using logs and debugging mechanisms.</description>
     </item>
     <item>
       <title>Fundamentals of Linux Lab</title>
-      <link>http://localhost:1313/projects/fundamentals-of-linux/lab/</link>
+      <link>https://proftsec.info/projects/fundamentals-of-linux/lab/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/fundamentals-of-linux/lab/</guid>
+      <guid>https://proftsec.info/projects/fundamentals-of-linux/lab/</guid>
       <description>Hands-on exercises covering essential Linux commands.</description>
     </item>
     <item>
       <title>Virtualization &amp; Cloud Basics Lab</title>
-      <link>http://localhost:1313/projects/virtualizationcloudbasics/lab/</link>
+      <link>https://proftsec.info/projects/virtualizationcloudbasics/lab/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/virtualizationcloudbasics/lab/</guid>
+      <guid>https://proftsec.info/projects/virtualizationcloudbasics/lab/</guid>
       <description>Hands-on exercises for setting up and managing virtual machines and cloud environments.</description>
     </item>
     <item>
       <title>The Cybersecurity Readiness Podcast</title>
-      <link>http://localhost:1313/podcasts/cybersecurity-readiness-podcast/</link>
+      <link>https://proftsec.info/podcasts/cybersecurity-readiness-podcast/</link>
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/podcasts/cybersecurity-readiness-podcast/</guid>
+      <guid>https://proftsec.info/podcasts/cybersecurity-readiness-podcast/</guid>
       <description>Discussions on preparing for and responding to cybersecurity threats.</description>
     </item>
     <item>
       <title>Darknet Diaries</title>
-      <link>http://localhost:1313/podcasts/darknet-diaries/</link>
+      <link>https://proftsec.info/podcasts/darknet-diaries/</link>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/podcasts/darknet-diaries/</guid>
+      <guid>https://proftsec.info/podcasts/darknet-diaries/</guid>
       <description>True stories from the dark side of the Internet.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/projects/networkvulnerability-scanning/lab/</link>
+      <link>https://proftsec.info/projects/networkvulnerability-scanning/lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/networkvulnerability-scanning/lab/</guid>
+      <guid>https://proftsec.info/projects/networkvulnerability-scanning/lab/</guid>
       <description>&lt;p&gt;Here is the &lt;strong&gt;full &lt;code&gt;lab.md&lt;/code&gt; file&lt;/strong&gt; for &lt;strong&gt;Project 6: Network &amp;amp; Vulnerability Scanning&lt;/strong&gt; in a &lt;strong&gt;single markdown block&lt;/strong&gt;, formatted like &lt;strong&gt;Project 2 Lab&lt;/strong&gt; and &lt;strong&gt;Project 4 Lab&lt;/strong&gt;, ensuring everything is in one continuous file for easy copying.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Project 6: Network &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;amp;&lt;/span&gt; Vulnerability Scanning&amp;#34;

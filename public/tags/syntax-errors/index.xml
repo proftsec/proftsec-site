@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Syntax Errors on Proftsec</title>
-    <link>http://localhost:1313/tags/syntax-errors/</link>
+    <link>https://proftsec.info/tags/syntax-errors/</link>
     <description>Recent content in Syntax Errors on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/syntax-errors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://proftsec.info/tags/syntax-errors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Debugging, Syntax Checking, and Log Analysis Lab</title>
-      <link>http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/</link>
+      <link>https://proftsec.info/projects/debugging-syntax-checking-and-log-analysis/lab/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/debugging-syntax-checking-and-log-analysis/lab/</guid>
+      <guid>https://proftsec.info/projects/debugging-syntax-checking-and-log-analysis/lab/</guid>
       <description>Hands-on exercises to identify and troubleshoot syntax errors using logs and debugging mechanisms.</description>
     </item>
   </channel>
