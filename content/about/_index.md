@@ -46,6 +46,24 @@ When I’m not immersed in the world of cybersecurity or education, you can find
 
 I’d love to hear from you! Feel free to explore my projects, share your thoughts, or connect for collaboration. Let’s build something great together!
 
+If you'd like to reach out, verify you're human first:  
+📧 <span id="email-container"></span>
+
+<div id="recaptcha-container">
+    <div class="g-recaptcha" data-sitekey="6Ldjwd8qAAAAADCTPbg_Ck0by47f2VNlqv0wpM3O" data-callback="showEmail"></div>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  function showEmail() {
+    let user = "info";
+    let domain = "proftsec.info";
+    let email = user + "@" + domain;
+    document.getElementById("email-container").innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+    document.getElementById("recaptcha-container").style.display = "none";
+  }
+</script>
+
 Follow me on these platforms:
 
 [![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/proftsec)

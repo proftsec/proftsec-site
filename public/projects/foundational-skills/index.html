@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Foundational Skills in Cybersecurity | Proftsec</title>
+<meta name="keywords" content="Cybersecurity, Linux, Networking, Command-line">
+<meta name="description" content="Essential skills for navigating operating systems, managing networks, and using command-line tools in cybersecurity.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/projects/foundational-skills/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/projects/foundational-skills/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/foundational-skills/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Proftsec (Alt + H)">
+                    <img src="http://localhost:1313/images/logo.webp" alt="" aria-label="logo"
+                        height="40">Proftsec</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/podcasts/">
+                    <span>Podcasts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Foundational Skills in Cybersecurity
+  </h1>
+  <div class="post-description">
+    Essential skills for navigating operating systems, managing networks, and using command-line tools in cybersecurity.
+  </div>
+</header>
+
+
+<article class="post-entry category-card">
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+      Foundational Skills in Cybersecurity
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Essential skills for navigating operating systems, managing networks, and using command-line tools in cybersecurity.</p>
+  </div>
+</article>
+<div class="post-content"><h1 id="foundational-skills-in-cybersecurity">Foundational Skills in Cybersecurity<a hidden class="anchor" aria-hidden="true" href="#foundational-skills-in-cybersecurity">#</a></h1>
+<h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<p>Building a strong cybersecurity foundation begins with mastering essential tools and technologies. This category introduces students to fundamental skills needed to navigate and manage operating systems, understand networking basics, and interact with command-line environments. These skills serve as the backbone for more advanced cybersecurity topics.</p>
+<h2 id="what-you-will-learn">What You Will Learn<a hidden class="anchor" aria-hidden="true" href="#what-you-will-learn">#</a></h2>
+<ul>
+<li>Core Linux and Windows command-line operations</li>
+<li>File system navigation and management</li>
+<li>Networking fundamentals, including IP configuration and basic troubleshooting</li>
+<li>Essential security concepts such as user permissions and system monitoring</li>
+<li>Introduction to virtualization for hands-on practice</li>
+</ul>
+<h2 id="why-this-matters">Why This Matters<a hidden class="anchor" aria-hidden="true" href="#why-this-matters">#</a></h2>
+<p>Foundational skills are crucial for anyone entering the cybersecurity field. A strong grasp of these topics allows professionals to effectively analyze systems, respond to security incidents, and work with advanced cybersecurity tools.</p>
+<h2 id="hands-on-learning">Hands-On Learning<a hidden class="anchor" aria-hidden="true" href="#hands-on-learning">#</a></h2>
+<p>Students will gain experience using:</p>
+<ul>
+<li><strong>Linux and Windows environments</strong> (VirtualBox, WSL, AWS, or Hyper-V)</li>
+<li><strong>Command-line interfaces</strong> to manage files, processes, and users</li>
+<li><strong>Basic scripting</strong> for automation and security monitoring</li>
+</ul>
+<p>🔗 <em>Continue to hands-on projects within this category to start building your skills.</em></p>
+
+
+</div>
+
+
+
+    
+    <article class="post-entry category-card">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">
+          <a href="http://localhost:1313/projects/foundational-skills/fundamentals-of-linux/">Project 1: Fundamentals of Linux</a>
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p>Fundamentals of Linux Overview The Linux operating system is widely used in cybersecurity and IT infrastructure. It offers numerous security auditing tools not available on Windows. This project introduces students to Linux, allowing them to become comfortable with basic navigation, file operations, and essential commands for security analysis.
+What You Will Learn Navigating the Linux file system Copying, deleting, and moving files and directories Searching for text within files Retrieving network configuration details Editing files using Nano Identifying logged-in users Writing simple Bash scripts Virtualization Options Before diving into the hands-on exercises, make sure you have access to a Linux environment. You can choose one of the following:
+</p>
+      </div>
+      <a class="entry-link" href="http://localhost:1313/projects/foundational-skills/fundamentals-of-linux/"></a>
+    </article>
+
+
+
+    
+    <article class="post-entry category-card">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">
+          <a href="http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/">Project 2: Virtualization &amp; Cloud Basics</a>
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p>Virtualization &amp; Cloud Basics Overview Understanding virtualization is essential for modern IT and cybersecurity. This project introduces students to virtual machines (VMs), cloud computing, and containers, helping them build the skills required to deploy and manage virtual environments.
+What You Will Learn Setting up virtual machines using VirtualBox, Hyper-V, or VMware Understanding cloud computing concepts (AWS, Azure, GCP) Working with containers (Docker Basics) Remote access using SSH and networking Snapshotting, exporting, and restoring environments Self-Check: Test Your Virtualization Knowledge Before proceeding to the full lab, try answering these:
+</p>
+      </div>
+      <a class="entry-link" href="http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/"></a>
+    </article>
+
+
+
+    
+    <article class="post-entry category-card">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">
+          <a href="http://localhost:1313/projects/foundational-skills/debugging-syntax-checking-and-log-analysis/">Project 3: Debugging, Syntax Checking, and Log Analysis</a>
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p>Debugging, Syntax Checking, and Log Analysis Overview Debugging is a critical skill in system administration and cybersecurity. This project will teach you how to recognize common syntax errors, interpret error messages, analyze system logs, and implement debugging techniques to verify the correctness of scripts and configurations.
+What You Will Learn Recognizing common syntax errors in Bash, Python, YAML, JSON, and configuration files. Using logs (/var/log/, journalctl) to troubleshoot system and application issues. Applying syntax checkers (bash -n, yamllint, jq, python3 -m py_compile). Creating logging mechanisms to track script execution and errors. Automating error detection to prevent issues before deployment. Self-Check: Debugging &amp; Troubleshooting Readiness Before proceeding to the full lab, try answering these:
+</p>
+      </div>
+      <a class="entry-link" href="http://localhost:1313/projects/foundational-skills/debugging-syntax-checking-and-log-analysis/"></a>
+    </article>
+
+
+
+    
+    <article class="post-entry category-card">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">
+          <a href="http://localhost:1313/projects/foundational-skills/networking-essentialssecurity/">Project 4: Networking Essentials &amp; Security</a>
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p>Networking Essentials &amp; Security Overview Understanding network security and traffic analysis is essential for cybersecurity and IT professionals. This project will guide you through capturing and analyzing network packets with Wireshark and configuring a secure VPN with WireGuard.
+What You Will Learn Networking fundamentals: IP addresses, TCP/UDP, ports, protocols. Capturing and analyzing network traffic using Wireshark. Recognizing insecure communication (HTTP, FTP) and encryption (HTTPS, VPNs). Setting up a WireGuard VPN for secure encrypted communication. Understanding firewall rules and log analysis for network security. Self-Check: Networking &amp; Security Readiness Before starting the lab, try answering these:
+</p>
+      </div>
+      <a class="entry-link" href="http://localhost:1313/projects/foundational-skills/networking-essentialssecurity/"></a>
+    </article>
+
+
+    </main>
+
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Proftsec</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>

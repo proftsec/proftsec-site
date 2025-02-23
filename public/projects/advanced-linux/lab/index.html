@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Advanced Linux Administration &amp; Security | Proftsec</title>
 <meta name="keywords" content="Linux, Administration, Security, Automation">
 <meta name="description" content="Hands-on lab covering advanced Linux system administration, automation, and security techniques.">
 <meta name="author" content="">
-<link rel="canonical" href="https://proftsec.info/projects/advanced-linux/lab/">
+<link rel="canonical" href="http://localhost:1313/projects/advanced-linux/lab/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://proftsec.info/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://proftsec.info/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://proftsec.info/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://proftsec.info/apple-touch-icon.png">
-<link rel="mask-icon" href="https://proftsec.info/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 
@@ -43,7 +43,7 @@
         .catch(error => console.error("Error loading GA4 ID:", error));
 </script>
 
-<link rel="alternate" hreflang="en" href="https://proftsec.info/projects/advanced-linux/lab/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/advanced-linux/lab/">
 <noscript>
     <style>
         #theme-toggle,
@@ -80,79 +80,7 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://proftsec.info/projects/advanced-linux/lab/">
-  <meta property="og:site_name" content="Proftsec">
-  <meta property="og:title" content="Advanced Linux Administration & Security">
-  <meta property="og:description" content="Hands-on lab covering advanced Linux system administration, automation, and security techniques.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="projects">
-    <meta property="article:published_time" content="2025-02-11T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-02-11T00:00:00+00:00">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Administration">
-    <meta property="article:tag" content="Security">
-    <meta property="article:tag" content="Automation">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Advanced Linux Administration &amp; Security">
-<meta name="twitter:description" content="Hands-on lab covering advanced Linux system administration, automation, and security techniques.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Projects",
-      "item": "https://proftsec.info/projects/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Project 5: Advanced Linux Administration \u0026 Security",
-      "item": "https://proftsec.info/projects/advanced-linux/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Advanced Linux Administration \u0026 Security",
-      "item": "https://proftsec.info/projects/advanced-linux/lab/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Advanced Linux Administration \u0026 Security",
-  "name": "Advanced Linux Administration \u0026 Security",
-  "description": "Hands-on lab covering advanced Linux system administration, automation, and security techniques.",
-  "keywords": [
-    "Linux", "Administration", "Security", "Automation"
-  ],
-  "articleBody": "Advanced Linux Administration \u0026 Security Lab Lab Setup Environment:\nUse VirtualBox, Hyper-V, VMware, or a cloud-based Linux instance (Debian, Ubuntu, or CentOS). Install necessary tools: sudo apt update \u0026\u0026 sudo apt install lynis htop tmux ufw -y System Performance Monitoring\nMonitor real-time system performance: top htop vmstat 5 10 Process \u0026 Service Management\nList all running services: systemctl list-units --type=service Restart a failed service: sudo systemctl restart apache2 Advanced Bash Scripting\nCreate a script to log disk space usage: #!/bin/bash df -h \u003e /var/log/disk_usage.log Automate it with cron: crontab -e Add: 0 * * * * /home/user/disk_monitor.sh Networking \u0026 Firewall Security\nCheck open network connections: ss -tulnp Block inbound SSH (for security): sudo ufw deny 22 Security Hardening\nAudit system security: sudo lynis audit system Set strict file permissions: sudo chmod 750 /secure_data Log Analysis \u0026 Troubleshooting\nFind failed SSH login attempts: sudo journalctl -u sshd | grep \"Failed password\" Monitor system logs: sudo tail -f /var/log/syslog Lab Completion Tasks 📸 Screenshots Required:\nRunning performance monitoring tools (htop, vmstat). A custom Bash script in action. Network security settings (ufw, iptables). Results of a security audit (Lynis). Log analysis of failed logins. 📝 Reflection Questions:\nWhat was the most difficult part of this project? How do security hardening techniques help prevent attacks? How can automation improve system administration? Next Steps This lab reinforces real-world Linux administration and security skills. Continue exploring server hardening, automation, and intrusion detection to advance your expertise.\n💾 ⬅️ Back to Project Page\n",
-  "wordCount" : "246",
-  "inLanguage": "en",
-  "datePublished": "2025-02-11T00:00:00Z",
-  "dateModified": "2025-02-11T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://proftsec.info/projects/advanced-linux/lab/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Proftsec",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://proftsec.info/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -169,9 +97,8 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://proftsec.info/" accesskey="h" title="Proftsec (Alt + H)">
-                        
-                    <img src="https://proftsec.info/images/logo_hu_22f1b0c63c7f0066.webp" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="Proftsec (Alt + H)">
+                    <img src="http://localhost:1313/images/logo.webp" alt="" aria-label="logo"
                         height="40">Proftsec</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -198,22 +125,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://proftsec.info/about/">
+                <a href="http://localhost:1313/about/">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://proftsec.info/projects/">
+                <a href="http://localhost:1313/projects/">
                     <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a href="https://proftsec.info/blog/">
+                <a href="http://localhost:1313/blog/">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://proftsec.info/podcasts/">
+                <a href="http://localhost:1313/podcasts/">
                     <span>Podcasts</span>
                 </a>
             </li>
@@ -341,10 +268,10 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://proftsec.info/tags/linux/">Linux</a></li>
-      <li><a href="https://proftsec.info/tags/administration/">Administration</a></li>
-      <li><a href="https://proftsec.info/tags/security/">Security</a></li>
-      <li><a href="https://proftsec.info/tags/automation/">Automation</a></li>
+      <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
+      <li><a href="http://localhost:1313/tags/administration/">Administration</a></li>
+      <li><a href="http://localhost:1313/tags/security/">Security</a></li>
+      <li><a href="http://localhost:1313/tags/automation/">Automation</a></li>
     </ul>
   </footer>
 </article>
@@ -352,7 +279,7 @@
 
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://proftsec.info/">Proftsec</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Proftsec</a></span> · 
 
     <span>
         Powered by

@@ -21,6 +21,10 @@ type: "page"
 
 ## 🔹 Featured Sections
 
+### About Me
+Learn more about the creator of proftsec here.
+- [Discover More Here](/about)
+
 ### 🛠️ Projects
 Explore hands-on cybersecurity and data analytics projects.
 - [📂 View All Projects](/projects)
@@ -33,9 +37,6 @@ Read in-depth articles, industry trends, and technical guides.
 Listen to discussions on cybersecurity, tech trends, and professional growth.
 - [🎧 Explore Podcasts](/podcasts)
 
-### 📩 Contact
-Have questions or want to collaborate? Get in touch!
-- [📬 Reach Out](/contact)
 
 ---
 

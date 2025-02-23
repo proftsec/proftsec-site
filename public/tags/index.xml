@@ -2,199 +2,290 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Proftsec</title>
-    <link>https://proftsec.info/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://proftsec.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Administration</title>
-      <link>https://proftsec.info/tags/administration/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/administration/</guid>
+      <title>Authentication</title>
+      <link>http://localhost:1313/tags/authentication/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/authentication/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>https://proftsec.info/tags/automation/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/automation/</guid>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/automation/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cybersecurity</title>
-      <link>https://proftsec.info/tags/cybersecurity/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/cybersecurity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://proftsec.info/tags/linux/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Masscan</title>
-      <link>https://proftsec.info/tags/masscan/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/masscan/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Metasploit</title>
-      <link>https://proftsec.info/tags/metasploit/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/metasploit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Networking</title>
-      <link>https://proftsec.info/tags/networking/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/networking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nmap</title>
-      <link>https://proftsec.info/tags/nmap/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/nmap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://proftsec.info/tags/security/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>VPN</title>
-      <link>https://proftsec.info/tags/vpn/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/vpn/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vulnerability Scanning</title>
-      <link>https://proftsec.info/tags/vulnerability-scanning/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/vulnerability-scanning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Wireshark</title>
-      <link>https://proftsec.info/tags/wireshark/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/wireshark/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CLI</title>
-      <link>https://proftsec.info/tags/cli/</link>
-      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/cli/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud Computing</title>
-      <link>https://proftsec.info/tags/cloud-computing/</link>
-      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/cloud-computing/</guid>
+      <title>Burp Suite</title>
+      <link>http://localhost:1313/tags/burp-suite/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/burp-suite/</guid>
       <description></description>
     </item>
     <item>
       <title>Command-Line</title>
-      <link>https://proftsec.info/tags/command-line/</link>
-      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/command-line/</guid>
+      <link>http://localhost:1313/tags/command-line/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/command-line/</guid>
       <description></description>
     </item>
     <item>
-      <title>Containers</title>
-      <link>https://proftsec.info/tags/containers/</link>
-      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/containers/</guid>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
-      <title>Debugging</title>
-      <link>https://proftsec.info/tags/debugging/</link>
-      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/debugging/</guid>
+      <title>Exploit Development</title>
+      <link>http://localhost:1313/tags/exploit-development/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/exploit-development/</guid>
       <description></description>
     </item>
     <item>
-      <title>Log Analysis</title>
-      <link>https://proftsec.info/tags/log-analysis/</link>
-      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/log-analysis/</guid>
+      <title>Hardening</title>
+      <link>http://localhost:1313/tags/hardening/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hardening/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network Security</title>
+      <link>http://localhost:1313/tags/network-security/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/network-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>http://localhost:1313/tags/networking/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Penetration Testing</title>
+      <link>http://localhost:1313/tags/penetration-testing/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/penetration-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Scripting</title>
-      <link>https://proftsec.info/tags/scripting/</link>
+      <link>http://localhost:1313/tags/scripting/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scripting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Secure Coding</title>
+      <link>http://localhost:1313/tags/secure-coding/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/secure-coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security Automation</title>
+      <link>http://localhost:1313/tags/security-automation/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL Injection</title>
+      <link>http://localhost:1313/tags/sql-injection/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sql-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vulnerability Scanning</title>
+      <link>http://localhost:1313/tags/vulnerability-scanning/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vulnerability-scanning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WAF</title>
+      <link>http://localhost:1313/tags/waf/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/waf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Security</title>
+      <link>http://localhost:1313/tags/web-security/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/web-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>XSS</title>
+      <link>http://localhost:1313/tags/xss/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/xss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Administration</title>
+      <link>http://localhost:1313/tags/administration/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/administration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Masscan</title>
+      <link>http://localhost:1313/tags/masscan/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/masscan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Metasploit</title>
+      <link>http://localhost:1313/tags/metasploit/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/metasploit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nmap</title>
+      <link>http://localhost:1313/tags/nmap/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nmap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VPN</title>
+      <link>http://localhost:1313/tags/vpn/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vpn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wireshark</title>
+      <link>http://localhost:1313/tags/wireshark/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/wireshark/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CLI</title>
+      <link>http://localhost:1313/tags/cli/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/scripting/</guid>
+      <guid>http://localhost:1313/tags/cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Computing</title>
+      <link>http://localhost:1313/tags/cloud-computing/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>http://localhost:1313/tags/containers/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Debugging</title>
+      <link>http://localhost:1313/tags/debugging/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/debugging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Log Analysis</title>
+      <link>http://localhost:1313/tags/log-analysis/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/log-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Syntax Errors</title>
-      <link>https://proftsec.info/tags/syntax-errors/</link>
+      <link>http://localhost:1313/tags/syntax-errors/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/syntax-errors/</guid>
+      <guid>http://localhost:1313/tags/syntax-errors/</guid>
       <description></description>
     </item>
     <item>
       <title>Troubleshooting</title>
-      <link>https://proftsec.info/tags/troubleshooting/</link>
+      <link>http://localhost:1313/tags/troubleshooting/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/troubleshooting/</guid>
+      <guid>http://localhost:1313/tags/troubleshooting/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtual Machines</title>
-      <link>https://proftsec.info/tags/virtual-machines/</link>
+      <link>http://localhost:1313/tags/virtual-machines/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/virtual-machines/</guid>
+      <guid>http://localhost:1313/tags/virtual-machines/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtualization</title>
-      <link>https://proftsec.info/tags/virtualization/</link>
+      <link>http://localhost:1313/tags/virtualization/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/virtualization/</guid>
+      <guid>http://localhost:1313/tags/virtualization/</guid>
       <description></description>
     </item>
     <item>
       <title>VMs</title>
-      <link>https://proftsec.info/tags/vms/</link>
+      <link>http://localhost:1313/tags/vms/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/vms/</guid>
+      <guid>http://localhost:1313/tags/vms/</guid>
       <description></description>
     </item>
     <item>
       <title>Education</title>
-      <link>https://proftsec.info/tags/education/</link>
+      <link>http://localhost:1313/tags/education/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/education/</guid>
+      <guid>http://localhost:1313/tags/education/</guid>
       <description></description>
     </item>
     <item>
       <title>Learning</title>
-      <link>https://proftsec.info/tags/learning/</link>
+      <link>http://localhost:1313/tags/learning/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/learning/</guid>
+      <guid>http://localhost:1313/tags/learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Zero Trust</title>
-      <link>https://proftsec.info/tags/zero-trust/</link>
+      <link>http://localhost:1313/tags/zero-trust/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://proftsec.info/tags/zero-trust/</guid>
+      <guid>http://localhost:1313/tags/zero-trust/</guid>
       <description></description>
     </item>
   </channel>

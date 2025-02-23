@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Fundamentals of Linux Lab | Proftsec</title>
 <meta name="keywords" content="Linux, CLI, Networking, Scripting">
 <meta name="description" content="Hands-on exercises covering essential Linux commands.">
 <meta name="author" content="">
-<link rel="canonical" href="https://proftsec.info/projects/fundamentals-of-linux/lab/">
+<link rel="canonical" href="http://localhost:1313/projects/fundamentals-of-linux/lab/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://proftsec.info/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://proftsec.info/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://proftsec.info/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://proftsec.info/apple-touch-icon.png">
-<link rel="mask-icon" href="https://proftsec.info/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 
@@ -43,7 +43,7 @@
         .catch(error => console.error("Error loading GA4 ID:", error));
 </script>
 
-<link rel="alternate" hreflang="en" href="https://proftsec.info/projects/fundamentals-of-linux/lab/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/fundamentals-of-linux/lab/">
 <noscript>
     <style>
         #theme-toggle,
@@ -80,79 +80,7 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://proftsec.info/projects/fundamentals-of-linux/lab/">
-  <meta property="og:site_name" content="Proftsec">
-  <meta property="og:title" content="Fundamentals of Linux Lab">
-  <meta property="og:description" content="Hands-on exercises covering essential Linux commands.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="projects">
-    <meta property="article:published_time" content="2025-02-09T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-02-09T00:00:00+00:00">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="CLI">
-    <meta property="article:tag" content="Networking">
-    <meta property="article:tag" content="Scripting">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fundamentals of Linux Lab">
-<meta name="twitter:description" content="Hands-on exercises covering essential Linux commands.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Projects",
-      "item": "https://proftsec.info/projects/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Project 1: Fundamentals of Linux",
-      "item": "https://proftsec.info/projects/fundamentals-of-linux/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Fundamentals of Linux Lab",
-      "item": "https://proftsec.info/projects/fundamentals-of-linux/lab/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Fundamentals of Linux Lab",
-  "name": "Fundamentals of Linux Lab",
-  "description": "Hands-on exercises covering essential Linux commands.",
-  "keywords": [
-    "Linux", "CLI", "Networking", "Scripting"
-  ],
-  "articleBody": "Fundamentals of Linux Lab Setting Up Your Linux Environment Follow these steps to set up your Debian system:\nDownload and Install VirtualBox\nInstall VirtualBox and create a new VM. Download the Debian ISO and install it on your VM. Alternative Setup Options\nHyper-V (Windows Server 2019 Option) WSL 2 (Windows Subsystem for Linux) AWS or Azure Cloud Instances Boot into Debian Linux\nPower on the VM and log in. Open a terminal window. Network Configuration Check Your IP Address ip address show This command displays network details, including IP addresses and interface names.\nTroubleshooting Missing Network Commands If ifconfig or ping isn’t working, install the required packages:\nsudo apt update \u0026\u0026 sudo apt install net-tools iputils-ping Basic Linux Commands Navigating the File System pwd # Shows current directory ls -alh # Lists all files with details cd /home # Changes to the home directory cd .. # Moves up one directory lsblk # Lists block storage devices Creating and Managing Files touch myfile.txt # Creates an empty file echo \"Hello, Linux!\" \u003e myfile.txt # Writes text to a file cat myfile.txt # Displays file content mv myfile.txt newfile.txt # Renames the file cp newfile.txt copyfile.txt # Copies the file rm copyfile.txt # Deletes the file Editing Files with Nano nano myfile.txt Modify text and press Ctrl + X, then Y to save and exit. Searching for Strings in Files grep -i \"search_term\" filename.txt # Case-insensitive search grep -r \"search_term\" /path/to/directory # Recursive search User and Process Management who # Lists currently logged-in users pinky -l $LOGNAME # Displays user details ps aux # Lists active processes kill # Terminates a process by PID Networking Tools ping -c 4 www.google.com # Sends ICMP packets to Google dig google.com # Checks DNS resolution traceroute google.com # Shows network path to destination sudo route -n # Displays routing table ip route # Displays current routes Bash Scripting Writing a Basic Script Create a script that logs system uptime every 5 seconds:\nnano monitor.sh Add this code:\n#!/bin/bash while true do uptime \u003e\u003e uptime_log.txt sleep 5 done Make it executable and run it:\nchmod +x monitor.sh ./monitor.sh File Permissions ls -l # View file permissions chmod +x script.sh # Grant execute permission to a script chmod 644 myfile.txt # Set read/write for owner, read for others chown user:group myfile.txt # Change file ownership Fun Linux Commands Try these for fun:\ncal 04 1887 # Show the calendar for April 1887 rev # Reverse text input toilet \"Hello\" # Print ASCII text in cool fonts (install with apt) sl # Watch a steam locomotive run across your screen cmatrix # See the Matrix rain effect fortune # Get a random Linux fortune message Submitting Your Work Include screenshots or recorded steps to demonstrate completion. Submit documentation via the designated submission platform, such as a course website, GitHub repository, or LMS. ",
-  "wordCount" : "476",
-  "inLanguage": "en",
-  "datePublished": "2025-02-09T00:00:00Z",
-  "dateModified": "2025-02-09T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://proftsec.info/projects/fundamentals-of-linux/lab/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Proftsec",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://proftsec.info/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -169,9 +97,8 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://proftsec.info/" accesskey="h" title="Proftsec (Alt + H)">
-                        
-                    <img src="https://proftsec.info/images/logo_hu_22f1b0c63c7f0066.webp" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="Proftsec (Alt + H)">
+                    <img src="http://localhost:1313/images/logo.webp" alt="" aria-label="logo"
                         height="40">Proftsec</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -198,22 +125,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://proftsec.info/about/">
+                <a href="http://localhost:1313/about/">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://proftsec.info/projects/">
+                <a href="http://localhost:1313/projects/">
                     <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a href="https://proftsec.info/blog/">
+                <a href="http://localhost:1313/blog/">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://proftsec.info/podcasts/">
+                <a href="http://localhost:1313/podcasts/">
                     <span>Podcasts</span>
                 </a>
             </li>
@@ -341,10 +268,10 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://proftsec.info/tags/linux/">Linux</a></li>
-      <li><a href="https://proftsec.info/tags/cli/">CLI</a></li>
-      <li><a href="https://proftsec.info/tags/networking/">Networking</a></li>
-      <li><a href="https://proftsec.info/tags/scripting/">Scripting</a></li>
+      <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
+      <li><a href="http://localhost:1313/tags/cli/">CLI</a></li>
+      <li><a href="http://localhost:1313/tags/networking/">Networking</a></li>
+      <li><a href="http://localhost:1313/tags/scripting/">Scripting</a></li>
     </ul>
   </footer>
 </article>
@@ -352,7 +279,7 @@
 
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://proftsec.info/">Proftsec</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Proftsec</a></span> · 
 
     <span>
         Powered by
