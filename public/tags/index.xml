@@ -6,8 +6,57 @@
     <description>Recent content in Tags on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Analytics</title>
+      <link>http://localhost:1313/tags/data-analytics/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Predictive Analytics</title>
+      <link>http://localhost:1313/tags/predictive-analytics/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/predictive-analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EDA</title>
+      <link>http://localhost:1313/tags/eda/</link>
+      <pubDate>Sun, 23 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/eda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistics</title>
+      <link>http://localhost:1313/tags/statistics/</link>
+      <pubDate>Sun, 23 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visualization</title>
+      <link>http://localhost:1313/tags/visualization/</link>
+      <pubDate>Sun, 23 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Authentication</title>
       <link>http://localhost:1313/tags/authentication/</link>
@@ -20,6 +69,13 @@
       <link>http://localhost:1313/tags/automation/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blockchain</title>
+      <link>http://localhost:1313/tags/blockchain/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/blockchain/</guid>
       <description></description>
     </item>
     <item>
@@ -37,10 +93,31 @@
       <description></description>
     </item>
     <item>
+      <title>Critical Infrastructure</title>
+      <link>http://localhost:1313/tags/critical-infrastructure/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/critical-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Cybersecurity</title>
       <link>http://localhost:1313/tags/cybersecurity/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Cleaning</title>
+      <link>http://localhost:1313/tags/data-cleaning/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-cleaning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emerging Technologies</title>
+      <link>http://localhost:1313/tags/emerging-technologies/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/emerging-technologies/</guid>
       <description></description>
     </item>
     <item>
@@ -51,10 +128,45 @@
       <description></description>
     </item>
     <item>
+      <title>Forensics</title>
+      <link>http://localhost:1313/tags/forensics/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/forensics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foundations</title>
+      <link>http://localhost:1313/tags/foundations/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/foundations/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Hardening</title>
       <link>http://localhost:1313/tags/hardening/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/hardening/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ICS Security</title>
+      <link>http://localhost:1313/tags/ics-security/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ics-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Incident Response</title>
+      <link>http://localhost:1313/tags/incident-response/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/incident-response/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Industrial Security</title>
+      <link>http://localhost:1313/tags/industrial-security/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/industrial-security/</guid>
       <description></description>
     </item>
     <item>
@@ -93,6 +205,20 @@
       <description></description>
     </item>
     <item>
+      <title>Quantum Security</title>
+      <link>http://localhost:1313/tags/quantum-security/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quantum-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SCADA</title>
+      <link>http://localhost:1313/tags/scada/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scada/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Scripting</title>
       <link>http://localhost:1313/tags/scripting/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
@@ -118,6 +244,13 @@
       <link>http://localhost:1313/tags/sql-injection/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/sql-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Intelligence</title>
+      <link>http://localhost:1313/tags/threat-intelligence/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-intelligence/</guid>
       <description></description>
     </item>
     <item>
