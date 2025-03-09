@@ -1,4 +1,5 @@
 baseURL = "https://proftsec.info"
+paginate = 1000
 languageCode = "en-us"
 title = "Proftsec"
 theme = ""

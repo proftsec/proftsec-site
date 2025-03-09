@@ -2,14 +2,12 @@
 
 {{- if (and site.Params.profileMode.enabled .IsHome) }}
     {{- partial "index_profile.html" . }}
-{{- else }} {{/* if not profileMode */}}
+{{- else }}
 
 {{- if not .IsHome | and .Title }}
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
-  <h1>
-    {{ .Title }}
-  </h1>
+  <h1>{{ .Title }}</h1>
   {{- if .Description }}
   <div class="post-description">
     {{ .Description | markdownify }}
@@ -22,9 +20,7 @@
 {{- if and .IsSection (ne .Permalink (site.BaseURL | printf "%sprojects/")) }}
 <article class="post-entry category-card">
   <header class="entry-header">
-    <h2 class="entry-hint-parent">
-      {{ .Title }}
-    </h2>
+    <h2 class="entry-hint-parent">{{ .Title }}</h2>
   </header>
   <div class="entry-content">
     <p>{{ .Description | plainify | htmlUnescape }}</p>
@@ -55,8 +51,8 @@
     {{- partial "home_info.html" . }}
 {{- end }}
 
+<!-- ✅ Begin Project Listing -->
 {{- range $index, $page := $paginator.Pages }}
-
     {{- $class := "post-entry" }}
 
     {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
@@ -97,10 +93,9 @@
       <a class="entry-link" href="{{ .Permalink }}"></a>
     </article>
     {{- end }}
+{{- end }} <!-- ✅ End Project Listing -->
 
-{{- end }}
-
-<!-- ✅ Ensure Pagination is Correctly Closed -->
+<!-- ✅ Pagination Appears Only at Bottom -->
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
   <nav class="pagination">

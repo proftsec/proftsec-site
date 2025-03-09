@@ -1,5 +1,5 @@
 ---
-title: "Project 09: Python for Cybersecurity"
+title: "Python for Cybersecurity"
 description: "Learn how to use Python for cybersecurity, including scripting, reconnaissance, and encoding techniques."
 date: 2025-02-22
 tags: ["Python", "Cybersecurity", "Automation", "Scripting"]

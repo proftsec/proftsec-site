@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/projects/cybersecurity-operationsincident-response/incident-detection-with-siem/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/foundational-skills/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,6 +17,12 @@
     <loc>http://localhost:1313/projects/foundational-skills/fundamentals-of-linux/</loc>
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/advanced-securitypenetration-testing/exploit-developmentbinary-exploitation/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-intelligenceioc-analysis/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/vulnerability-assessmentscanning/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -22,6 +31,9 @@
   </url><url>
     <loc>http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/</loc>
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/advanced-securitypenetration-testing/red-team-simulationadversarial-tactics/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/advanced-securitypenetration-testing/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
@@ -56,25 +68,115 @@
     <loc>http://localhost:1313/projects/predictive-analyticsmachine-learning/</loc>
     <lastmod>2025-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:1313/projects/cybersecurity-analytics-threat-detection-through-data/</loc>
+    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/risk-management-analytics-for-cybersecurity/</loc>
     <lastmod>2025-02-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/advanced-security--penetration-testing/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/adversarial-simulation/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/adversarial-tactics/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/binary-exploitation/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/buffer-overflow/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-02-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cyber-threats/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/cybersecurity-operations--incident-response/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/exploit-development/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/advanced-securitypenetration-testing/exploit-developmentbinary-exploitation/lab/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ioc-analysis/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lateral-movement/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/log-analysis/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/offensive-security/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/penetration-testing/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/privilege-escalation/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/cybersecurity-operationsincident-response/incident-detection-with-siem/lab/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/red-team/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/advanced-securitypenetration-testing/red-team-simulationadversarial-tactics/lab/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/reverse-engineering/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/security-monitoring/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/siem/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/threat-detection/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/threat-intelligence/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-intelligenceioc-analysis/lab/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cyber-risk-analytics/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cybersecurity/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-analytics/</loc>
-    <lastmod>2025-02-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/projects/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/risk-management/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cybersecurity-analytics/</loc>
+    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/machine-learning/</loc>
     <lastmod>2025-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/predictive-analytics/</loc>
-    <lastmod>2025-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/projects/</loc>
-    <lastmod>2025-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/eda/</loc>
@@ -85,9 +187,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/visualization/</loc>
     <lastmod>2025-02-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/advanced-security--penetration-testing/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
@@ -110,16 +209,10 @@
     <loc>http://localhost:1313/tags/critical-infrastructure/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/data-cleaning/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/emerging-technologies/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/exploit-development/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/forensics/</loc>
@@ -149,13 +242,10 @@
     <loc>http://localhost:1313/tags/networking/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/penetration-testing/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/advanced-securitypenetration-testing/python-for-cybersecurity/lab/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/quantum-security/</loc>
@@ -177,9 +267,6 @@
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sql-injection/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/threat-intelligence/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/vulnerability-scanning/</loc>
@@ -243,9 +330,6 @@
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/foundational-skills/fundamentals-of-linux/lab/</loc>
-    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/log-analysis/</loc>
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/syntax-errors/</loc>

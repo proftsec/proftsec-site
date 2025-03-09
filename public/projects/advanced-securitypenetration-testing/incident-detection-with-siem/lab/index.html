@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Project 11: Incident Detection with SIEM | Proftsec</title>
+<meta name="keywords" content="SIEM, Security Monitoring, Incident Detection, Splunk, Wazuh">
+<meta name="description" content="Learn how to use Security Information and Event Management (SIEM) tools for detecting cybersecurity incidents.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/projects/advanced-securitypenetration-testing/incident-detection-with-siem/lab/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/advanced-securitypenetration-testing/incident-detection-with-siem/lab/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Proftsec (Alt + H)">
+                    <img src="http://localhost:1313/images/logo.webp" alt="" aria-label="logo"
+                        height="40">Proftsec</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/podcasts/">
+                    <span>Podcasts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Project 11: Incident Detection with SIEM
+    </h1>
+    <div class="post-description">
+      Learn how to use Security Information and Event Management (SIEM) tools for detecting cybersecurity incidents.
+    </div>
+    <div class="post-meta"><span title='2025-03-08 00:00:00 +0000 UTC'>March 8, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="incident-detection-with-siem">Incident Detection with SIEM<a hidden class="anchor" aria-hidden="true" href="#incident-detection-with-siem">#</a></h1>
+<h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<p>Security Information and Event Management (SIEM) tools help cybersecurity professionals analyze and detect security incidents by aggregating logs and monitoring network activity. This project introduces students to <strong>Splunk and Wazuh</strong>, two popular SIEM platforms used for security operations.</p>
+<h2 id="what-you-will-learn">What You Will Learn<a hidden class="anchor" aria-hidden="true" href="#what-you-will-learn">#</a></h2>
+<ul>
+<li>Setting up and configuring <strong>SIEM tools</strong> (Splunk &amp; Wazuh)</li>
+<li><strong>Log analysis</strong> and detecting security incidents</li>
+<li>Creating <strong>custom dashboards and alerts</strong> for real-time monitoring</li>
+<li>Investigating <strong>suspicious activities</strong> using SIEM queries</li>
+</ul>
+<hr>
+<h2 id="lab-instructions">Lab Instructions<a hidden class="anchor" aria-hidden="true" href="#lab-instructions">#</a></h2>
+<h3 id="1-setting-up-your-siem-environment"><strong>1. Setting Up Your SIEM Environment</strong><a hidden class="anchor" aria-hidden="true" href="#1-setting-up-your-siem-environment">#</a></h3>
+<p>You will need:</p>
+<ul>
+<li>A <strong>Debian Linux VM</strong> (GCP, VirtualBox, or WSL)</li>
+<li><strong>Splunk Free</strong> (Download from <a href="https://www.splunk.com">Splunk.com</a>)</li>
+<li><strong>Wazuh</strong> (Open-source SIEM alternative)</li>
+</ul>
+<h4 id="install-splunk"><strong>Install Splunk</strong><a hidden class="anchor" aria-hidden="true" href="#install-splunk">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget -O splunk.deb <span style="color:#e6db74">&#34;https://download.splunk.com/products/splunk/releases/latest/linux/splunk-latest-linux-2.6-amd64.deb&#34;</span>
+</span></span><span style="display:flex;"><span>sudo dpkg -i splunk.deb
+</span></span><span style="display:flex;"><span>sudo /opt/splunk/bin/splunk start --accept-license
+</span></span></code></pre></div><h4 id="install-wazuh"><strong>Install Wazuh</strong><a hidden class="anchor" aria-hidden="true" href="#install-wazuh">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -sO https://packages.wazuh.com/4.x/wazuh-install.sh
+</span></span><span style="display:flex;"><span>bash wazuh-install.sh -a
+</span></span></code></pre></div><p>📝 <strong>Proof of Completion</strong>: Take a screenshot of your running Splunk and Wazuh dashboards.</p>
+<hr>
+<h3 id="2-ingesting-log-data-into-splunk--wazuh"><strong>2. Ingesting Log Data into Splunk &amp; Wazuh</strong><a hidden class="anchor" aria-hidden="true" href="#2-ingesting-log-data-into-splunk--wazuh">#</a></h3>
+<h4 id="step-1-download-sample-log-data"><strong>Step 1: Download Sample Log Data</strong><a hidden class="anchor" aria-hidden="true" href="#step-1-download-sample-log-data">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://example.com/sample-logs.log -O sample.log
+</span></span></code></pre></div><h4 id="step-2-add-logs-to-splunk"><strong>Step 2: Add Logs to Splunk</strong><a hidden class="anchor" aria-hidden="true" href="#step-2-add-logs-to-splunk">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/opt/splunk/bin/splunk add monitor /path/to/sample.log
+</span></span></code></pre></div><h4 id="step-3-add-logs-to-wazuh"><strong>Step 3: Add Logs to Wazuh</strong><a hidden class="anchor" aria-hidden="true" href="#step-3-add-logs-to-wazuh">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;logcollector.log_source = /path/to/sample.log&#34;</span> &gt;&gt; /var/ossec/etc/ossec.conf
+</span></span><span style="display:flex;"><span>systemctl restart wazuh-manager
+</span></span></code></pre></div><p>📝 <strong>Proof of Completion</strong>: Upload logs and verify data ingestion in SIEM dashboards.</p>
+<hr>
+<h3 id="3-running-security-queries"><strong>3. Running Security Queries</strong><a hidden class="anchor" aria-hidden="true" href="#3-running-security-queries">#</a></h3>
+<p>Use <strong>Splunk Search Processing Language (SPL)</strong> and <strong>Wazuh queries</strong> to detect threats.</p>
+<h4 id="detect-failed-logins-in-splunk"><strong>Detect Failed Logins in Splunk</strong><a hidden class="anchor" aria-hidden="true" href="#detect-failed-logins-in-splunk">#</a></h4>
+<pre tabindex="0"><code class="language-spl" data-lang="spl">index=main sourcetype=auth_log &#34;failed password&#34;
+</code></pre><h4 id="detect-unauthorized-access-in-wazuh"><strong>Detect Unauthorized Access in Wazuh</strong><a hidden class="anchor" aria-hidden="true" href="#detect-unauthorized-access-in-wazuh">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X GET <span style="color:#e6db74">&#34;http://localhost:55000/security/audit?alert_level=5&#34;</span>
+</span></span></code></pre></div><p>📝 <strong>Proof of Completion</strong>: Execute security queries and take a screenshot of the results.</p>
+<hr>
+<h2 id="final-submission"><strong>Final Submission</strong><a hidden class="anchor" aria-hidden="true" href="#final-submission">#</a></h2>
+<ul>
+<li>Submit a <strong>Google Doc</strong> with screenshots of your completed tasks.</li>
+<li>Ensure each screenshot has a <strong>caption</strong> explaining what was accomplished.</li>
+<li>Follow submission guidelines as provided by your instructor.</li>
+</ul>
+<p>🚀 <strong>Congratulations! You&rsquo;ve completed Incident Detection with SIEM!</strong> 🚀</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/siem/">SIEM</a></li>
+      <li><a href="http://localhost:1313/tags/security-monitoring/">Security Monitoring</a></li>
+      <li><a href="http://localhost:1313/tags/incident-detection/">Incident Detection</a></li>
+      <li><a href="http://localhost:1313/tags/splunk/">Splunk</a></li>
+      <li><a href="http://localhost:1313/tags/wazuh/">Wazuh</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Proftsec</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>

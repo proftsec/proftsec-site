@@ -6,10 +6,59 @@
     <description>Recent content in Welcome to Proftsec on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Project 09: Python for Cybersecurity</title>
+      <title>Digital Forensics &amp; Incident Response Lab</title>
+      <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/digital-forensicsincident-response/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/digital-forensicsincident-response/lab/</guid>
+      <description>Perform forensic investigations, extract system artifacts, and analyze digital evidence.</description>
+    </item>
+    <item>
+      <title>Exploit Development &amp; Binary Exploitation Lab</title>
+      <link>http://localhost:1313/projects/advanced-securitypenetration-testing/exploit-developmentbinary-exploitation/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/advanced-securitypenetration-testing/exploit-developmentbinary-exploitation/lab/</guid>
+      <description>Learn how to develop exploits, analyze binaries, and bypass security protections.</description>
+    </item>
+    <item>
+      <title>Malware Analysis &amp; Reverse Engineering Lab</title>
+      <link>http://localhost:1313/projects/advanced-securitypenetration-testing/malware-analysisreverse-engineering/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/advanced-securitypenetration-testing/malware-analysisreverse-engineering/lab/</guid>
+      <description>Analyze and reverse-engineer malware to understand its behavior, impact, and mitigation techniques.</description>
+    </item>
+    <item>
+      <title>Project 13: Incident Detection with SIEM</title>
+      <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/incident-detection-with-siem/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/incident-detection-with-siem/lab/</guid>
+      <description>Learn how to use Security Information and Event Management (SIEM) tools for log analysis, anomaly detection, and security monitoring.</description>
+    </item>
+    <item>
+      <title>Red Team Simulation &amp; Adversarial Tactics Lab</title>
+      <link>http://localhost:1313/projects/advanced-securitypenetration-testing/red-team-simulationadversarial-tactics/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/advanced-securitypenetration-testing/red-team-simulationadversarial-tactics/lab/</guid>
+      <description>Simulate a cyberattack using real-world adversarial tactics, including privilege escalation, lateral movement, and evasion.</description>
+    </item>
+    <item>
+      <title>Threat Hunting &amp; Anomaly Detection Lab</title>
+      <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</guid>
+      <description>Develop proactive threat hunting techniques to identify security anomalies and potential cyber threats.</description>
+    </item>
+    <item>
+      <title>Threat Intelligence &amp; IOC Analysis</title>
+      <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-intelligenceioc-analysis/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-intelligenceioc-analysis/lab/</guid>
+      <description>Learn how to gather and analyze threat intelligence, identify Indicators of Compromise (IOCs), and apply them to cybersecurity defense strategies.</description>
+    </item>
+    <item>
+      <title>Python for Cybersecurity</title>
       <link>http://localhost:1313/projects/advanced-securitypenetration-testing/python-for-cybersecurity/lab/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/advanced-securitypenetration-testing/python-for-cybersecurity/lab/</guid>

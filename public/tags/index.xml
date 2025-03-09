@@ -6,13 +6,167 @@
     <description>Recent content in Tags on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adversarial Simulation</title>
+      <link>http://localhost:1313/tags/adversarial-simulation/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/adversarial-simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adversarial Tactics</title>
+      <link>http://localhost:1313/tags/adversarial-tactics/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/adversarial-tactics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Binary Exploitation</title>
+      <link>http://localhost:1313/tags/binary-exploitation/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/binary-exploitation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Buffer Overflow</title>
+      <link>http://localhost:1313/tags/buffer-overflow/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/buffer-overflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyber Threats</title>
+      <link>http://localhost:1313/tags/cyber-threats/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cyber-threats/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exploit Development</title>
+      <link>http://localhost:1313/tags/exploit-development/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/exploit-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IOC Analysis</title>
+      <link>http://localhost:1313/tags/ioc-analysis/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ioc-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lateral Movement</title>
+      <link>http://localhost:1313/tags/lateral-movement/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lateral-movement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Log Analysis</title>
+      <link>http://localhost:1313/tags/log-analysis/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/log-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Offensive Security</title>
+      <link>http://localhost:1313/tags/offensive-security/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/offensive-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Penetration Testing</title>
+      <link>http://localhost:1313/tags/penetration-testing/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/penetration-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Privilege Escalation</title>
+      <link>http://localhost:1313/tags/privilege-escalation/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/privilege-escalation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Red Team</title>
+      <link>http://localhost:1313/tags/red-team/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/red-team/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse Engineering</title>
+      <link>http://localhost:1313/tags/reverse-engineering/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reverse-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security Monitoring</title>
+      <link>http://localhost:1313/tags/security-monitoring/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security-monitoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SIEM</title>
+      <link>http://localhost:1313/tags/siem/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/siem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Detection</title>
+      <link>http://localhost:1313/tags/threat-detection/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-detection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Intelligence</title>
+      <link>http://localhost:1313/tags/threat-intelligence/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyber Risk Analytics</title>
+      <link>http://localhost:1313/tags/cyber-risk-analytics/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cyber-risk-analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Data Analytics</title>
       <link>http://localhost:1313/tags/data-analytics/</link>
-      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/data-analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Risk Management</title>
+      <link>http://localhost:1313/tags/risk-management/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/risk-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity Analytics</title>
+      <link>http://localhost:1313/tags/cybersecurity-analytics/</link>
+      <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity-analytics/</guid>
       <description></description>
     </item>
     <item>
@@ -100,13 +254,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cybersecurity</title>
-      <link>http://localhost:1313/tags/cybersecurity/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cybersecurity/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Data Cleaning</title>
       <link>http://localhost:1313/tags/data-cleaning/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
@@ -118,13 +265,6 @@
       <link>http://localhost:1313/tags/emerging-technologies/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/emerging-technologies/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Exploit Development</title>
-      <link>http://localhost:1313/tags/exploit-development/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/exploit-development/</guid>
       <description></description>
     </item>
     <item>
@@ -191,13 +331,6 @@
       <description></description>
     </item>
     <item>
-      <title>Penetration Testing</title>
-      <link>http://localhost:1313/tags/penetration-testing/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/penetration-testing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Python</title>
       <link>http://localhost:1313/tags/python/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
@@ -244,13 +377,6 @@
       <link>http://localhost:1313/tags/sql-injection/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/sql-injection/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Threat Intelligence</title>
-      <link>http://localhost:1313/tags/threat-intelligence/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/threat-intelligence/</guid>
       <description></description>
     </item>
     <item>
@@ -356,13 +482,6 @@
       <link>http://localhost:1313/tags/debugging/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/debugging/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Log Analysis</title>
-      <link>http://localhost:1313/tags/log-analysis/</link>
-      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/log-analysis/</guid>
       <description></description>
     </item>
     <item>
