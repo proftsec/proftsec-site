@@ -9,6 +9,20 @@
     <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/cyber-threats/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Malware Analysis &amp; Reverse Engineering Lab</title>
+      <link>http://localhost:1313/projects/advanced-securitypenetration-testing/malware-analysisreverse-engineering/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/advanced-securitypenetration-testing/malware-analysisreverse-engineering/lab/</guid>
+      <description>Analyze and reverse-engineer malware to understand its behavior, impact, and mitigation techniques.</description>
+    </item>
+    <item>
+      <title>Threat Hunting &amp; Anomaly Detection Lab</title>
+      <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</guid>
+      <description>Develop proactive threat hunting techniques to identify security anomalies and potential cyber threats.</description>
+    </item>
+    <item>
       <title>Threat Intelligence &amp; IOC Analysis</title>
       <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-intelligenceioc-analysis/lab/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>

@@ -16,6 +16,13 @@
       <description>Learn how to use Security Information and Event Management (SIEM) tools for log analysis, anomaly detection, and security monitoring.</description>
     </item>
     <item>
+      <title>Threat Hunting &amp; Anomaly Detection Lab</title>
+      <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</guid>
+      <description>Develop proactive threat hunting techniques to identify security anomalies and potential cyber threats.</description>
+    </item>
+    <item>
       <title>Threat Intelligence &amp; IOC Analysis</title>
       <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-intelligenceioc-analysis/lab/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>

@@ -6,7 +6,14 @@
     <description>Recent content in Education on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why I Created Proftsec: A Cybersecurity Learning Hub</title>
+      <link>http://localhost:1313/blog/why-i-created-proftsec/</link>
+      <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/why-i-created-proftsec/</guid>
+      <description>The story behind Proftsec.info, the motivation for creating it, and its mission as a cybersecurity resource.</description>
+    </item>
   </channel>
 </rss>

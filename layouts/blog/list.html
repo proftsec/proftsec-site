@@ -1,0 +1,101 @@
+{{ define "main" }}
+
+<article class="post-list">
+  <h1>Proftsec Blog</h1>
+  <p>Latest cybersecurity news, tutorials, and hands-on guides.</p>
+
+  {{ range .Pages }}
+  <div class="blog-card">
+    {{ if .Params.featured_image }}
+      <img src="{{ .Params.featured_image }}" alt="Blog Image" class="blog-image">
+      {{else}}
+      <img src="/images/default-thumbnail.jpg" alt="Default Blog Image" class="blog-image">
+      {{ end }}
+
+    <div class="blog-content">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="blog-description">{{ .Description }}</p>
+      <a href="{{ .RelPermalink }}" class="read-more">Read More →</a>
+    </div>
+  </div>
+  {{ end }}
+</article>
+
+<style>
+  :root {
+    --bg-color: #f4f4f4;
+    --text-color: #000;
+    --card-bg: #fff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --link-color: #007BFF;
+  }
+
+  /* Apply dark mode styles when the user toggles the theme */
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+    --link-color: #4da6ff;
+  }
+
+  body { 
+    font-family: Arial, sans-serif; 
+    margin: 40px; 
+    padding: 0; 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .post-list { 
+    max-width: 900px; 
+    margin: auto; 
+    background: var(--card-bg); 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0px 0px 10px var(--card-shadow); 
+  }
+
+  .blog-card { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    background: var(--card-bg); 
+    border-radius: 8px; 
+    box-shadow: 0px 2px 5px var(--card-shadow);
+  }
+
+  .blog-image { 
+    width: 200px; 
+    height: 120px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-right: 15px; 
+  }
+
+  .blog-content { flex-grow: 1; }
+
+  .blog-content h2 { 
+    margin: 0; 
+    font-size: 20px; 
+    color: var(--text-color);
+  }
+
+  .blog-description { 
+    color: var(--text-color); 
+    font-size: 14px; 
+    margin: 10px 0; 
+  }
+
+  .read-more { 
+    text-decoration: none; 
+    color: var(--link-color); 
+    font-weight: bold; 
+    font-size: 14px; 
+  }
+
+  .read-more:hover { text-decoration: underline; }
+</style>
+
+{{ end }}

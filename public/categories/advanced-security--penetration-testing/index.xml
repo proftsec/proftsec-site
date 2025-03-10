@@ -16,6 +16,13 @@
       <description>Learn how to develop exploits, analyze binaries, and bypass security protections.</description>
     </item>
     <item>
+      <title>Malware Analysis &amp; Reverse Engineering Lab</title>
+      <link>http://localhost:1313/projects/advanced-securitypenetration-testing/malware-analysisreverse-engineering/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/advanced-securitypenetration-testing/malware-analysisreverse-engineering/lab/</guid>
+      <description>Analyze and reverse-engineer malware to understand its behavior, impact, and mitigation techniques.</description>
+    </item>
+    <item>
       <title>Red Team Simulation &amp; Adversarial Tactics Lab</title>
       <link>http://localhost:1313/projects/advanced-securitypenetration-testing/red-team-simulationadversarial-tactics/lab/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>

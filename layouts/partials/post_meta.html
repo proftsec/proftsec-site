@@ -19,5 +19,7 @@
 {{- end }}
 
 {{- with ($scratch.Get "meta") }}
-{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
-{{- end -}}
+  {{- range . }}
+    <p>{{ . }}</p>  <!-- Ensures each metadata entry is on a new line -->
+  {{- end }}
+{{- end }}

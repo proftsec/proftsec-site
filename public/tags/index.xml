@@ -23,6 +23,20 @@
       <description></description>
     </item>
     <item>
+      <title>Adversary Emulation</title>
+      <link>http://localhost:1313/tags/adversary-emulation/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/adversary-emulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anomaly Detection</title>
+      <link>http://localhost:1313/tags/anomaly-detection/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/anomaly-detection/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Binary Exploitation</title>
       <link>http://localhost:1313/tags/binary-exploitation/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
@@ -37,6 +51,13 @@
       <description></description>
     </item>
     <item>
+      <title>Cyber Investigations</title>
+      <link>http://localhost:1313/tags/cyber-investigations/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cyber-investigations/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Cyber Threats</title>
       <link>http://localhost:1313/tags/cyber-threats/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
@@ -44,10 +65,45 @@
       <description></description>
     </item>
     <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DFIR</title>
+      <link>http://localhost:1313/tags/dfir/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dfir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Forensics</title>
+      <link>http://localhost:1313/tags/digital-forensics/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/digital-forensics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dynamic &amp; Static Analysis</title>
+      <link>http://localhost:1313/tags/dynamic--static-analysis/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dynamic--static-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Exploit Development</title>
       <link>http://localhost:1313/tags/exploit-development/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/exploit-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Incident Response</title>
+      <link>http://localhost:1313/tags/incident-response/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/incident-response/</guid>
       <description></description>
     </item>
     <item>
@@ -69,6 +125,20 @@
       <link>http://localhost:1313/tags/log-analysis/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/log-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Malware Analysis</title>
+      <link>http://localhost:1313/tags/malware-analysis/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/malware-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory Analysis</title>
+      <link>http://localhost:1313/tags/memory-analysis/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/memory-analysis/</guid>
       <description></description>
     </item>
     <item>
@@ -114,6 +184,13 @@
       <description></description>
     </item>
     <item>
+      <title>Security Operations</title>
+      <link>http://localhost:1313/tags/security-operations/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security-operations/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>SIEM</title>
       <link>http://localhost:1313/tags/siem/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
@@ -128,6 +205,13 @@
       <description></description>
     </item>
     <item>
+      <title>Threat Hunting</title>
+      <link>http://localhost:1313/tags/threat-hunting/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-hunting/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Threat Intelligence</title>
       <link>http://localhost:1313/tags/threat-intelligence/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
@@ -139,13 +223,6 @@
       <link>http://localhost:1313/tags/cyber-risk-analytics/</link>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cyber-risk-analytics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cybersecurity</title>
-      <link>http://localhost:1313/tags/cybersecurity/</link>
-      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
@@ -293,13 +370,6 @@
       <link>http://localhost:1313/tags/ics-security/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ics-security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Incident Response</title>
-      <link>http://localhost:1313/tags/incident-response/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/incident-response/</guid>
       <description></description>
     </item>
     <item>

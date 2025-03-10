@@ -9,11 +9,25 @@
     <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/cybersecurity-operations--incident-response/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Digital Forensics &amp; Incident Response Lab</title>
+      <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/digital-forensicsincident-response/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/digital-forensicsincident-response/lab/</guid>
+      <description>Perform forensic investigations, extract system artifacts, and analyze digital evidence.</description>
+    </item>
+    <item>
       <title>Project 13: Incident Detection with SIEM</title>
       <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/incident-detection-with-siem/lab/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/incident-detection-with-siem/lab/</guid>
       <description>Learn how to use Security Information and Event Management (SIEM) tools for log analysis, anomaly detection, and security monitoring.</description>
+    </item>
+    <item>
+      <title>Threat Hunting &amp; Anomaly Detection Lab</title>
+      <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</guid>
+      <description>Develop proactive threat hunting techniques to identify security anomalies and potential cyber threats.</description>
     </item>
     <item>
       <title>Threat Intelligence &amp; IOC Analysis</title>

@@ -6,8 +6,15 @@
     <description>Recent content in Welcome to Proftsec on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Up a Beginner&#39;s Cybersecurity Lab at Home</title>
+      <link>http://localhost:1313/blog/how-to-set-up-beginners-cybersecurity-lab-at-home/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/how-to-set-up-beginners-cybersecurity-lab-at-home/</guid>
+      <description>A step-by-step guide to setting up a beginner-friendly cybersecurity lab using VirtualBox or VMware Player.</description>
+    </item>
     <item>
       <title>Digital Forensics &amp; Incident Response Lab</title>
       <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/digital-forensicsincident-response/lab/</link>
@@ -119,6 +126,13 @@
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/lab/</guid>
       <description>Hands-on exercises for setting up and managing virtual machines and cloud environments.</description>
+    </item>
+    <item>
+      <title>Why I Created Proftsec: A Cybersecurity Learning Hub</title>
+      <link>http://localhost:1313/blog/why-i-created-proftsec/</link>
+      <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/why-i-created-proftsec/</guid>
+      <description>The story behind Proftsec.info, the motivation for creating it, and its mission as a cybersecurity resource.</description>
     </item>
     <item>
       <title>The Cybersecurity Readiness Podcast</title>
