@@ -6,8 +6,36 @@
     <description>Recent content in Welcome to Proftsec on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Skills Every Cybersecurity Student Should Develop</title>
+      <link>http://localhost:1313/blog/skills-every-cybersecurity-student-should-develop/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/skills-every-cybersecurity-student-should-develop/</guid>
+      <description>A guide for aspiring cybersecurity professionals on the essential skills needed to succeed in the field.</description>
+    </item>
+    <item>
+      <title>My Cybersecurity Journey: Lessons from Teaching, Consulting, and Hands-On Labs</title>
+      <link>http://localhost:1313/blog/my-cybersecurity-journey/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/my-cybersecurity-journey/</guid>
+      <description>A personal look into my path from a non-traditional student to a cybersecurity educator, consultant, and hands-on lab developer.</description>
+    </item>
+    <item>
+      <title>Support ProftSec</title>
+      <link>http://localhost:1313/support/support-proftsec/</link>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/support/support-proftsec/</guid>
+      <description>&lt;h2 id=&#34;why-support-proftsec&#34;&gt;Why Support ProftSec?&lt;/h2&gt;
+&lt;p&gt;ProftSec provides free cybersecurity insights, hands-on labs, and educational resources. Your support helps cover hosting costs, tool access, and research time to keep content accessible.&lt;/p&gt;
+&lt;h2 id=&#34;how-you-can-support&#34;&gt;How You Can Support&lt;/h2&gt;
+&lt;p&gt;If you’ve found value in these resources, consider making a small donation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Suggested Donation Range:&lt;/strong&gt;&lt;br&gt;
+💡 $5 - $100 (For larger contributions, please contact me first.)&lt;/p&gt;
+&lt;p&gt;Every contribution helps keep ProftSec running. Thank you for your support!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ko-fi.com/proftsec&#34;&gt;&lt;img alt=&#34;Support Me on Ko-fi&#34; loading=&#34;lazy&#34; src=&#34;https://storage.ko-fi.com/cdn/brandasset/kofi_button_blue.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to Set Up a Beginner&#39;s Cybersecurity Lab at Home</title>
       <link>http://localhost:1313/blog/how-to-set-up-beginners-cybersecurity-lab-at-home/</link>

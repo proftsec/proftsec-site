@@ -144,6 +144,11 @@
                     <span>Podcasts</span>
                 </a>
             </li>
+            <li>
+                <a href="http://localhost:1313/support/support-proftsec/">
+                    <span>Support ProftSec</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -158,22 +163,10 @@
     <div class="post-description">
       Hands-on exercises for analyzing network traffic with Wireshark and configuring a secure WireGuard VPN.
     </div>
-    <div class="post-meta">
-      <p>🕒 <strong>Published on:</strong> February 11, 2025</p>
-      <br> 
-      <p class="tag-container">🏷️ <strong>Tags:</strong></p>
-      <p class="tag-list">
-        
-          <a href="/tags/networking" class="post-tag">#Networking</a>
-        
-          <a href="/tags/wireshark" class="post-tag">#Wireshark</a>
-        
-          <a href="/tags/vpn" class="post-tag">#VPN</a>
-        
-          <a href="/tags/security" class="post-tag">#Security</a>
-        
-      </p>
-    </div>
+<div class="post-meta">
+  <div class="meta-line">
+    <p>🕒 <strong>Published on:</strong> February 11, 2025</p>
+  </div>
 
   </header> 
   <div class="post-content"><h1 id="networking-essentials--security-lab">Networking Essentials &amp; Security Lab<a hidden class="anchor" aria-hidden="true" href="#networking-essentials--security-lab">#</a></h1>
@@ -288,25 +281,26 @@
 </article>
 
 <style>
-     .post-meta {
+  .post-meta {
     font-size: 14px;
     color: var(--text-color);
     margin-bottom: 15px;
   }
 
-  .post-meta p {
-    margin: 8px 0;  
+  .meta-line {
+    display: block !important;  
+    margin-bottom: 10px;  
   }
 
   .tag-container {
-    margin-top: 12px;  
     font-weight: bold;
+    margin-top: 12px;
   }
 
   .tag-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 8px;
     margin-top: 5px;
   }
 
@@ -319,7 +313,6 @@
     text-decoration: none;
     color: var(--link-color);
   }
-
 </style>
     </main>
 

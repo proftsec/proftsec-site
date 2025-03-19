@@ -6,8 +6,15 @@
     <description>Recent content in Virtualization on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Up a Beginner&#39;s Cybersecurity Lab at Home</title>
+      <link>http://localhost:1313/blog/how-to-set-up-beginners-cybersecurity-lab-at-home/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/how-to-set-up-beginners-cybersecurity-lab-at-home/</guid>
+      <description>A step-by-step guide to setting up a beginner-friendly cybersecurity lab using VirtualBox or VMware Player.</description>
+    </item>
     <item>
       <title>Virtualization &amp; Cloud Basics Lab</title>
       <link>http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/lab/</link>
