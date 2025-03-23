@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Emerging Technologies &amp; Research on Proftsec</title>
+    <link>http://localhost:1313/categories/emerging-technologies--research/</link>
+    <description>Recent content in Emerging Technologies &amp; Research on Proftsec</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/emerging-technologies--research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI &amp; ML for Threat Detection Lab</title>
+      <link>http://localhost:1313/projects/emerging-technologiesresearch/aiml-for-threat-detection-and-soc-automation/lab/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/emerging-technologiesresearch/aiml-for-threat-detection-and-soc-automation/lab/</guid>
+      <description>Build and test anomaly detection models using Python and machine learning libraries to identify cybersecurity threats in log data.</description>
+    </item>
+    <item>
+      <title>Blockchain Security &amp; Smart Contract Exploitation Lab</title>
+      <link>http://localhost:1313/projects/emerging-technologiesresearch/blockchain-securitysmart-contract-exploitation/lab/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/emerging-technologiesresearch/blockchain-securitysmart-contract-exploitation/lab/</guid>
+      <description>Deploy vulnerable smart contracts and simulate real-world exploits using Ethereum tools like Remix IDE and Hardhat.</description>
+    </item>
+    <item>
+      <title>Zero Trust Architecture Lab</title>
+      <link>http://localhost:1313/projects/emerging-technologiesresearch/building-zero-trust-architecture-with-open-tools/lab/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/emerging-technologiesresearch/building-zero-trust-architecture-with-open-tools/lab/</guid>
+      <description>Implement a simulated Zero Trust environment using pfSense, Docker, and VPN tools to model identity-aware access and traffic segmentation.</description>
+    </item>
+    <item>
+      <title>Post-Quantum Cryptography Lab Instructions</title>
+      <link>http://localhost:1313/projects/emerging-technologiesresearch/post-quantum-cryptography/lab/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/emerging-technologiesresearch/post-quantum-cryptography/lab/</guid>
+      <description>Implement and analyze post-quantum encryption and signature schemes using Kyber and Dilithium.</description>
+    </item>
+  </channel>
+</rss>

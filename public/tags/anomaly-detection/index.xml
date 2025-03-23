@@ -6,8 +6,15 @@
     <description>Recent content in Anomaly Detection on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/anomaly-detection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI &amp; ML for Threat Detection Lab</title>
+      <link>http://localhost:1313/projects/emerging-technologiesresearch/aiml-for-threat-detection-and-soc-automation/lab/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/emerging-technologiesresearch/aiml-for-threat-detection-and-soc-automation/lab/</guid>
+      <description>Build and test anomaly detection models using Python and machine learning libraries to identify cybersecurity threats in log data.</description>
+    </item>
     <item>
       <title>Threat Hunting &amp; Anomaly Detection Lab</title>
       <link>http://localhost:1313/projects/cybersecurity-operationsincident-response/threat-huntinganomaly-detection/lab/</link>

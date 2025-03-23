@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Zero Trust Architecture Lab | Proftsec</title>
+<meta name="keywords" content="Zero Trust, Network Security, Segmentation, Access Control">
+<meta name="description" content="Implement a simulated Zero Trust environment using pfSense, Docker, and VPN tools to model identity-aware access and traffic segmentation.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/projects/emerging-technologiesresearch/building-zero-trust-architecture-with-open-tools/lab/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+
+
+<script>
+    fetch('/.netlify/functions/get-ga-id')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(id => {
+            if (!id || id === "No GA ID found") {
+                console.warn("GA4 ID not found. Ensure your Netlify environment variable is set.");
+                return;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', id);
+        })
+        .catch(error => console.error("Error loading GA4 ID:", error));
+</script>
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/emerging-technologiesresearch/building-zero-trust-architecture-with-open-tools/lab/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Proftsec (Alt + H)">
+                    <img src="http://localhost:1313/images/logo.webp" alt="" aria-label="logo"
+                        height="40">Proftsec</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/podcasts/">
+                    <span>Podcasts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/support/support-proftsec/">
+                    <span>Support ProftSec</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Zero Trust Architecture Lab
+    </h1>
+    <div class="post-description">
+      Implement a simulated Zero Trust environment using pfSense, Docker, and VPN tools to model identity-aware access and traffic segmentation.
+    </div>
+<div class="post-meta">
+  <div class="meta-line">
+    <p>🕒 <strong>Published on:</strong> March 22, 2025</p>
+  </div>
+
+  </header> 
+  <div class="post-content"><h1 id="zero-trust-architecture-lab">Zero Trust Architecture Lab<a hidden class="anchor" aria-hidden="true" href="#zero-trust-architecture-lab">#</a></h1>
+<h2 id="overview"><strong>Overview</strong><a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<p>This hands-on lab will help you implement a small-scale Zero Trust Architecture (ZTA) using open-source tools. You’ll simulate secure access control, segmentation, and monitoring between multiple internal services.</p>
+<hr>
+<h2 id="lab-instructions"><strong>Lab Instructions</strong><a hidden class="anchor" aria-hidden="true" href="#lab-instructions">#</a></h2>
+<h3 id="1-lab-setup-tools-and-environment"><strong>1. Lab Setup: Tools and Environment</strong><a hidden class="anchor" aria-hidden="true" href="#1-lab-setup-tools-and-environment">#</a></h3>
+<p>You will need:</p>
+<ul>
+<li>pfSense (in a VM or installed on Proxmox/VirtualBox)</li>
+<li>Docker and Docker Compose</li>
+<li>OpenVPN or WireGuard for identity-based remote access</li>
+<li>Optional: Suricata or Snort for traffic monitoring</li>
+</ul>
+<h4 id="network-design"><strong>Network Design:</strong><a hidden class="anchor" aria-hidden="true" href="#network-design">#</a></h4>
+<ul>
+<li><strong>Segment A:</strong> Trusted Users (e.g., Admin Workstation)</li>
+<li><strong>Segment B:</strong> Internal Web App (Docker container)</li>
+<li><strong>Segment C:</strong> Sensitive Service (Database container)</li>
+<li>All traffic flows controlled via pfSense firewall rules</li>
+</ul>
+<hr>
+<h3 id="2-build-the-network-segments-in-docker"><strong>2. Build the Network Segments in Docker</strong><a hidden class="anchor" aria-hidden="true" href="#2-build-the-network-segments-in-docker">#</a></h3>
+<p>Create an isolated Docker network and simulate services:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">webapp</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">httpd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">networks</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">segment_b</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">db</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mariadb</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">MYSQL_ROOT_PASSWORD</span>: <span style="color:#ae81ff">secret</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">networks</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">segment_c</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">networks</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">segment_b</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">segment_c</span>:
+</span></span></code></pre></div><hr>
+<h3 id="3-configure-pfsense-for-zero-trust-principles"><strong>3. Configure pfSense for Zero Trust Principles</strong><a hidden class="anchor" aria-hidden="true" href="#3-configure-pfsense-for-zero-trust-principles">#</a></h3>
+<ol>
+<li>Create VLANs or virtual interfaces for each segment</li>
+<li>Apply firewall rules:
+<ul>
+<li>Deny all traffic by default</li>
+<li>Allow webapp-to-db access only from approved source</li>
+<li>Require VPN tunnel for administrative access</li>
+</ul>
+</li>
+<li>Set up Suricata for East-West traffic inspection</li>
+</ol>
+<hr>
+<h3 id="4-identity-based-remote-access-with-vpn"><strong>4. Identity-Based Remote Access with VPN</strong><a hidden class="anchor" aria-hidden="true" href="#4-identity-based-remote-access-with-vpn">#</a></h3>
+<ol>
+<li>Install and configure OpenVPN or WireGuard on pfSense</li>
+<li>Create user accounts with unique certs or keys</li>
+<li>Test secure access to services from a remote device via VPN</li>
+</ol>
+<p>📝 <strong>Checkpoint:</strong> Can the user access only the permitted service? Can lateral movement occur?</p>
+<hr>
+<h3 id="5-simulate-an-insider-threat-or-breach-attempt"><strong>5. Simulate an Insider Threat or Breach Attempt</strong><a hidden class="anchor" aria-hidden="true" href="#5-simulate-an-insider-threat-or-breach-attempt">#</a></h3>
+<ol>
+<li>Attempt to access the database from a container in segment B</li>
+<li>Verify that pfSense blocks unauthorized East-West traffic</li>
+<li>Use Suricata or firewall logs to detect and analyze the attempt</li>
+</ol>
+<hr>
+<h3 id="6-just-in-time-access--auditing-optional-challenge"><strong>6. Just-in-Time Access &amp; Auditing (Optional Challenge)</strong><a hidden class="anchor" aria-hidden="true" href="#6-just-in-time-access--auditing-optional-challenge">#</a></h3>
+<ul>
+<li>Set up temporary firewall rules triggered by authenticated sessions</li>
+<li>Log access windows and automate rule expiry</li>
+<li>Capture logs for later analysis and auditing</li>
+</ul>
+<hr>
+<h2 id="final-submission"><strong>Final Submission</strong><a hidden class="anchor" aria-hidden="true" href="#final-submission">#</a></h2>
+<p>Submit a short report including:</p>
+<ul>
+<li>Network diagram of your Zero Trust layout</li>
+<li>Screenshots of pfSense firewall rules and VPN configuration</li>
+<li>Documentation of traffic flow enforcement and detection</li>
+<li>Reflection: How does Zero Trust differ from traditional perimeter models?</li>
+</ul>
+<p>🚀 <strong>Great work! You’ve just built a Zero Trust lab using real tools!</strong> 🚀</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/zero-trust/">#Zero Trust</a></li>
+      <li><a href="http://localhost:1313/tags/network-security/">#Network Security</a></li>
+      <li><a href="http://localhost:1313/tags/segmentation/">#Segmentation</a></li>
+      <li><a href="http://localhost:1313/tags/access-control/">#Access Control</a></li>
+    </ul>
+  </footer>
+</article>
+
+<style>
+  .post-meta {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+  }
+
+  .meta-line {
+    display: block !important;  
+    margin-bottom: 10px;  
+  }
+
+  .tag-container {
+    font-weight: bold;
+    margin-top: 12px;
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5px;
+  }
+
+  .post-tag {
+    background: var(--card-bg);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--link-color);
+  }
+</style>
+    </main>
+
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Proftsec</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>
