@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/projects/operational-technology-security/simulating-icsprotocol-exploration/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/cybersecurity-operationsincident-response/incident-detection-with-siem/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -95,6 +98,30 @@
     <loc>http://localhost:1313/projects/risk-management-analytics-for-cybersecurity/</loc>
     <lastmod>2025-02-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/cybersecurity-threats/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/email-security/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hands-on-learning/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/incident-response/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/medusa/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ransomware/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/the-rise-of-medusa-ransomware/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/access-control/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -119,13 +146,16 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity-threats/</loc>
-    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/emerging-technologies--research/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/ics/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/identity-management/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/industrial-protocols/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/machine-learning/</loc>
@@ -134,10 +164,22 @@
     <loc>http://localhost:1313/tags/microsegmentation/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/modbus/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/network-security/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/ot--ics-security/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ot-security/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/scada/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/security-operations/</loc>
@@ -153,9 +195,6 @@
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/solidity/</loc>
-    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/web3-exploits/</loc>
@@ -270,9 +309,6 @@
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/advanced-securitypenetration-testing/exploit-developmentbinary-exploitation/lab/</loc>
-    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/incident-response/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ioc-analysis/</loc>
@@ -411,9 +447,6 @@
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/advanced-securitypenetration-testing/python-for-cybersecurity/lab/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/scada/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/scripting/</loc>
