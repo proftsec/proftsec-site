@@ -1,5 +1,5 @@
 ---
-title: "Project 3: Debugging, Syntax Checking, and Log Analysis"
+title: "FSC-3: Debugging, Syntax Checking, and Log Analysis"
 description: "Identify common syntax errors, interpret logs, and create debugging mechanisms to improve troubleshooting skills."
 date: 2025-02-09
 tags: ["Debugging", "Syntax Errors", "Log Analysis", "Troubleshooting"]
@@ -12,7 +12,7 @@ weight: 3
 draft: false
 ---
 
-# Debugging, Syntax Checking, and Log Analysis
+# FSC-3: Debugging, Syntax Checking, and Log Analysis
 
 ## Overview
 Debugging is a **critical skill** in system administration and cybersecurity. This project will teach you **how to recognize common syntax errors, interpret error messages, analyze system logs, and implement debugging techniques** to verify the correctness of scripts and configurations.

@@ -1,5 +1,5 @@
 ---
-title: "Networking Essentials & Security Lab"
+title: "FSC-4: Networking Essentials & Security Lab"
 description: "Hands-on exercises for analyzing network traffic with Wireshark and configuring a secure WireGuard VPN."
 date: 2025-02-11
 tags: ["Networking", "Wireshark", "VPN", "Security"]
@@ -7,7 +7,7 @@ categories: ["Projects"]
 draft: false
 ---
 
-# Networking Essentials & Security Lab
+# FSC-4: Networking Essentials & Security Lab
 
 ## **1️⃣ Capturing and Analyzing Network Traffic with Wireshark**
 ### **Step 1: Install Wireshark**
@@ -113,14 +113,13 @@ sudo iptables -A FORWARD -i wg0 -o eth0 -j ACCEPT
 
 ---
 
-## **Self-Check: Networking & Security Mastery**
+## **Self-Check: FSC-4 Mastery**
 1. How do you filter for HTTP traffic in Wireshark?
 2. What command shows active VPN connections in WireGuard?
 3. Why is using HTTPS preferred over HTTP for authentication?
 
-## **Submitting Your Work**
+## **Submitting Your FSC-4 Work**
 - Document your steps using screenshots.
 - Submit via GitHub, LMS, or your course portal.
 
 ---
-

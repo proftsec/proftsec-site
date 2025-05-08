@@ -1,5 +1,5 @@
 ---
-title: "Project 2: Virtualization & Cloud Basics"
+title: "FSC-2: Virtualization & Cloud Basics"
 description: "Learn how to set up and manage virtual machines, cloud instances, and containerized environments."
 date: 2025-02-09
 tags: ["Virtualization", "Cloud Computing", "Virtual Machines", "Containers"]
@@ -12,7 +12,7 @@ weight: 2
 draft: false
 ---
 
-# Virtualization & Cloud Basics
+# FSC-2: Virtualization & Cloud Basics
 
 ## Overview
 Understanding virtualization is essential for modern IT and cybersecurity. This project introduces students to **virtual machines (VMs), cloud computing, and containers**, helping them build the skills required to deploy and manage virtual environments.

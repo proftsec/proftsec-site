@@ -1,5 +1,5 @@
 ---
-title: "Foundational Skills in Cybersecurity"
+title: "Foundational Skills in Cybersecurity (FSC)"
 description: "Essential skills for navigating operating systems, managing networks, and using command-line tools in cybersecurity."
 date: 2025-02-22
 tags: ["Cybersecurity", "Linux", "Networking", "Command-line"]
@@ -12,7 +12,7 @@ weight: 1
 draft: false
 ---
 
-# Foundational Skills in Cybersecurity
+# Foundational Skills in Cybersecurity (FSC)
 
 ## Overview
 Building a strong cybersecurity foundation begins with mastering essential tools and technologies. This category introduces students to fundamental skills needed to navigate and manage operating systems, understand networking basics, and interact with command-line environments. These skills serve as the backbone for more advanced cybersecurity topics.
@@ -33,4 +33,4 @@ Students will gain experience using:
 - **Command-line interfaces** to manage files, processes, and users  
 - **Basic scripting** for automation and security monitoring  
 
-🔗 *Continue to hands-on projects within this category to start building your skills.*
+🔗 *Continue to hands-on projects within this category. Projects in this section are labeled FSC-1, FSC-2, FSC-3, and so on to reflect your progress through foundational topics.*

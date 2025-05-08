@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals of Linux Lab"
+title: "FSC-1: Fundamentals of Linux"
 description: "Hands-on exercises covering essential Linux commands."
 date: 2025-02-09
 tags: ["Linux", "CLI", "Networking", "Scripting"]
@@ -7,7 +7,7 @@ categories: ["Projects"]
 draft: false
 ---
 
-# Fundamentals of Linux Lab
+# FSC-1: Fundamentals of Linux
 
 ## Setting Up Your Linux Environment
 Follow these steps to set up your Debian system:
@@ -17,8 +17,8 @@ Follow these steps to set up your Debian system:
    - Download the [Debian ISO](https://www.debian.org/distrib/) and install it on your VM.
 
 2. **Alternative Setup Options**
-   - **Hyper-V** (Windows Server 2019 Option)
-   - **WSL 2** (Windows Subsystem for Linux)
+   - **Hyper-V** (Windows Server 2019 Option)  
+   - **WSL 2** (Windows Subsystem for Linux)  
    - **AWS or Azure Cloud Instances**
 
 3. **Boot into Debian Linux**
@@ -43,21 +43,21 @@ sudo apt update && sudo apt install net-tools iputils-ping
 
 ### Navigating the File System
 ```bash
-pwd  # Shows current directory
-ls -alh  # Lists all files with details
-cd /home  # Changes to the home directory
-cd ..  # Moves up one directory
-lsblk  # Lists block storage devices
+pwd                # Shows current directory  
+ls -alh            # Lists all files with details  
+cd /home           # Changes to the home directory  
+cd ..              # Moves up one directory  
+lsblk              # Lists block storage devices
 ```
 
 ### Creating and Managing Files
 ```bash
-touch myfile.txt  # Creates an empty file
-echo "Hello, Linux!" > myfile.txt  # Writes text to a file
-cat myfile.txt  # Displays file content
-mv myfile.txt newfile.txt  # Renames the file
-cp newfile.txt copyfile.txt  # Copies the file
-rm copyfile.txt  # Deletes the file
+touch myfile.txt                # Creates an empty file  
+echo "Hello, Linux!" > myfile.txt  # Writes text to a file  
+cat myfile.txt                  # Displays file content  
+mv myfile.txt newfile.txt      # Renames the file  
+cp newfile.txt copyfile.txt    # Copies the file  
+rm copyfile.txt                # Deletes the file
 ```
 
 ### Editing Files with Nano
@@ -68,25 +68,25 @@ nano myfile.txt
 
 ### Searching for Strings in Files
 ```bash
-grep -i "search_term" filename.txt  # Case-insensitive search
+grep -i "search_term" filename.txt        # Case-insensitive search  
 grep -r "search_term" /path/to/directory  # Recursive search
 ```
 
 ## User and Process Management
 ```bash
-who  # Lists currently logged-in users
-pinky -l $LOGNAME  # Displays user details
-ps aux  # Lists active processes
-kill <PID>  # Terminates a process by PID
+who                 # Lists currently logged-in users  
+pinky -l $LOGNAME   # Displays user details  
+ps aux              # Lists active processes  
+kill <PID>          # Terminates a process by PID
 ```
 
 ## Networking Tools
 ```bash
-ping -c 4 www.google.com  # Sends ICMP packets to Google
-dig google.com  # Checks DNS resolution
-traceroute google.com  # Shows network path to destination
-sudo route -n  # Displays routing table
-ip route  # Displays current routes
+ping -c 4 www.google.com   # Sends ICMP packets to Google  
+dig google.com             # Checks DNS resolution  
+traceroute google.com      # Shows network path to destination  
+sudo route -n              # Displays routing table  
+ip route                   # Displays current routes
 ```
 
 ## Bash Scripting
@@ -113,26 +113,24 @@ chmod +x monitor.sh
 
 ## File Permissions
 ```bash
-ls -l  # View file permissions
-chmod +x script.sh  # Grant execute permission to a script
-chmod 644 myfile.txt  # Set read/write for owner, read for others
+ls -l                      # View file permissions  
+chmod +x script.sh         # Grant execute permission to a script  
+chmod 644 myfile.txt       # Set read/write for owner, read for others  
 chown user:group myfile.txt  # Change file ownership
 ```
 
 ## Fun Linux Commands
 Try these for fun:
 ```bash
-cal 04 1887    # Show the calendar for April 1887
-rev            # Reverse text input
-toilet "Hello" # Print ASCII text in cool fonts (install with apt)
-sl             # Watch a steam locomotive run across your screen
-cmatrix        # See the Matrix rain effect
+cal 04 1887    # Show the calendar for April 1887  
+rev            # Reverse text input  
+toilet "Hello" # Print ASCII text in cool fonts (install with apt)  
+sl             # Watch a steam locomotive run across your screen  
+cmatrix        # See the Matrix rain effect  
 fortune        # Get a random Linux fortune message
 ```
 
 ## Submitting Your Work
-- Include screenshots or recorded steps to demonstrate completion.
+- Include screenshots or recorded steps to demonstrate completion.  
 - Submit documentation via the designated submission platform, such as a course website, GitHub repository, or LMS.
-
----
 

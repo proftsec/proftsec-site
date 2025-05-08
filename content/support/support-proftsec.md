@@ -3,6 +3,7 @@ title: "Support ProftSec"
 date: 2025-03-16
 menu:
   main:
+    name: "Support Proftsec"
     weight: 10
 ---
 

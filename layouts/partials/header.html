@@ -119,11 +119,11 @@
         <ul id="menu">
             {{- range site.Menus.main }}
             <li>
-                <a href="{{ .URL | absLangURL }}">
-                    <span>{{ .Pre }}{{ .Name }}{{ .Post }}</span>
-                </a>
+              <a href="{{ .URL | absLangURL }}">
+                <span>{{ .Pre }}{{ .Name }}{{ .Post }}</span>
+              </a>
             </li>
             {{- end }}
-        </ul>
+          </ul>
     </nav>
 </header>

@@ -98,28 +98,28 @@
     <loc>http://localhost:1313/projects/risk-management-analytics-for-cybersecurity/</loc>
     <lastmod>2025-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity-threats/</loc>
+    <loc>http://localhost:1313/tags/ai-in-cybersecurity/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/email-security/</loc>
+    <loc>http://localhost:1313/blog/ai-risk-matrix/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cybersecurity-education/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hands-on-learning/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/incident-response/</loc>
+    <loc>http://localhost:1313/tags/risk-management/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/medusa/</loc>
-    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ransomware/</loc>
+    <loc>http://localhost:1313/tags/risk-matrix/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/the-rise-of-medusa-ransomware/</loc>
+    <loc>http://localhost:1313/tags/threat-modeling/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/access-control/</loc>
@@ -146,6 +146,9 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/cybersecurity-threats/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/emerging-technologies--research/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -170,13 +173,13 @@
     <loc>http://localhost:1313/tags/network-security/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ot--ics-security/</loc>
-    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/ot-security/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/projects/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/scada/</loc>
@@ -221,6 +224,9 @@
     <loc>http://localhost:1313/tags/dilithium/</loc>
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/email-security/</loc>
+    <lastmod>2025-03-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/ethical-hacking/</loc>
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -230,10 +236,16 @@
     <loc>http://localhost:1313/tags/hands-on-lab/</loc>
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/incident-response/</loc>
+    <lastmod>2025-03-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/kyber/</loc>
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/learning/</loc>
+    <lastmod>2025-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/medusa/</loc>
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/post-quantum-cryptography/</loc>
@@ -246,6 +258,12 @@
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/quantum-threats/</loc>
+    <lastmod>2025-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ransomware/</loc>
+    <lastmod>2025-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/medusa-ransomware/</loc>
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/skills-every-cybersecurity-student-should-develop/</loc>
@@ -375,12 +393,6 @@
     <lastmod>2025-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-analytics/</loc>
-    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/projects/</loc>
-    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/risk-management/</loc>
     <lastmod>2025-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cybersecurity-analytics/</loc>

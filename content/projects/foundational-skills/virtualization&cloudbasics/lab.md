@@ -1,5 +1,5 @@
 ---
-title: "Virtualization & Cloud Basics Lab"
+title: "FSC-2: Virtualization & Cloud Basics Lab"
 description: "Hands-on exercises for setting up and managing virtual machines and cloud environments."
 date: 2025-02-09
 tags: ["Virtualization", "Cloud Computing", "VMs", "Containers"]
@@ -7,7 +7,7 @@ categories: ["Projects"]
 draft: false
 ---
 
-# Virtualization & Cloud Basics Lab
+# FSC-2: Virtualization & Cloud Basics Lab
 
 ## Setting Up Your Virtual Environment
 Follow these steps to set up your virtualization platform:

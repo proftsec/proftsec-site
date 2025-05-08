@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Project 2: Virtualization &amp; Cloud Basics on Proftsec</title>
+    <title>FSC-2: Virtualization &amp; Cloud Basics on Proftsec</title>
     <link>http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/</link>
-    <description>Recent content in Project 2: Virtualization &amp; Cloud Basics on Proftsec</description>
+    <description>Recent content in FSC-2: Virtualization &amp; Cloud Basics on Proftsec</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Virtualization &amp; Cloud Basics Lab</title>
+      <title>FSC-2: Virtualization &amp; Cloud Basics Lab</title>
       <link>http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/lab/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/foundational-skills/virtualizationcloudbasics/lab/</guid>

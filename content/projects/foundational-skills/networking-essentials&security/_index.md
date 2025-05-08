@@ -1,5 +1,5 @@
 ---
-title: "Project 4: Networking Essentials & Security"
+title: "FSC-4: Networking Essentials & Security"
 description: "Analyze network traffic using Wireshark and configure a secure VPN with WireGuard."
 date: 2025-02-11
 tags: ["Networking", "Wireshark", "VPN", "Security"]
@@ -12,7 +12,7 @@ weight: 4
 draft: false
 ---
 
-# Networking Essentials & Security
+# FSC-4: Networking Essentials & Security
 
 ## Overview
 Understanding **network security and traffic analysis** is essential for cybersecurity and IT professionals. This project will guide you through **capturing and analyzing network packets with Wireshark** and **configuring a secure VPN with WireGuard**.

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Fundamentals of Linux Lab | Proftsec</title>
+<title>FSC-1: Fundamentals of Linux | Proftsec</title>
 <meta name="keywords" content="Linux, CLI, Networking, Scripting">
 <meta name="description" content="Hands-on exercises covering essential Linux commands.">
 <meta name="author" content="">
@@ -125,36 +125,31 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about/">
-                    <span>About</span>
-                </a>
+              <a href="http://localhost:1313/about/">
+                <span>About</span>
+              </a>
             </li>
             <li>
-                <a href="http://localhost:1313/projects/">
-                    <span>Projects</span>
-                </a>
+              <a href="http://localhost:1313/projects/">
+                <span>Projects</span>
+              </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blog/">
-                    <span>Blog</span>
-                </a>
+              <a href="http://localhost:1313/blog/">
+                <span>Blog</span>
+              </a>
             </li>
             <li>
-                <a href="http://localhost:1313/podcasts/">
-                    <span>Podcasts</span>
-                </a>
+              <a href="http://localhost:1313/podcasts/">
+                <span>Podcasts</span>
+              </a>
             </li>
             <li>
-                <a href="http://localhost:1313/support/support-proftsec/">
-                    <span>Support ProftSec</span>
-                </a>
+              <a href="http://localhost:1313/support/support-proftsec/">
+                <span>Support Proftsec</span>
+              </a>
             </li>
-            <li>
-                <a href="http://localhost:1313/">
-                    <span>OT &amp; ICS Security</span>
-                </a>
-            </li>
-        </ul>
+          </ul>
     </nav>
 </header>
 <main class="main">
@@ -163,7 +158,7 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Fundamentals of Linux Lab
+      FSC-1: Fundamentals of Linux
     </h1>
     <div class="post-description">
       Hands-on exercises covering essential Linux commands.
@@ -174,7 +169,7 @@
   </div>
 
   </header> 
-  <div class="post-content"><h1 id="fundamentals-of-linux-lab">Fundamentals of Linux Lab<a hidden class="anchor" aria-hidden="true" href="#fundamentals-of-linux-lab">#</a></h1>
+  <div class="post-content"><h1 id="fsc-1-fundamentals-of-linux">FSC-1: Fundamentals of Linux<a hidden class="anchor" aria-hidden="true" href="#fsc-1-fundamentals-of-linux">#</a></h1>
 <h2 id="setting-up-your-linux-environment">Setting Up Your Linux Environment<a hidden class="anchor" aria-hidden="true" href="#setting-up-your-linux-environment">#</a></h2>
 <p>Follow these steps to set up your Debian system:</p>
 <ol>
@@ -210,37 +205,37 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install net-tools iputils-ping
 </span></span></code></pre></div><h2 id="basic-linux-commands">Basic Linux Commands<a hidden class="anchor" aria-hidden="true" href="#basic-linux-commands">#</a></h2>
 <h3 id="navigating-the-file-system">Navigating the File System<a hidden class="anchor" aria-hidden="true" href="#navigating-the-file-system">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pwd  <span style="color:#75715e"># Shows current directory</span>
-</span></span><span style="display:flex;"><span>ls -alh  <span style="color:#75715e"># Lists all files with details</span>
-</span></span><span style="display:flex;"><span>cd /home  <span style="color:#75715e"># Changes to the home directory</span>
-</span></span><span style="display:flex;"><span>cd ..  <span style="color:#75715e"># Moves up one directory</span>
-</span></span><span style="display:flex;"><span>lsblk  <span style="color:#75715e"># Lists block storage devices</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pwd                <span style="color:#75715e"># Shows current directory  </span>
+</span></span><span style="display:flex;"><span>ls -alh            <span style="color:#75715e"># Lists all files with details  </span>
+</span></span><span style="display:flex;"><span>cd /home           <span style="color:#75715e"># Changes to the home directory  </span>
+</span></span><span style="display:flex;"><span>cd ..              <span style="color:#75715e"># Moves up one directory  </span>
+</span></span><span style="display:flex;"><span>lsblk              <span style="color:#75715e"># Lists block storage devices</span>
 </span></span></code></pre></div><h3 id="creating-and-managing-files">Creating and Managing Files<a hidden class="anchor" aria-hidden="true" href="#creating-and-managing-files">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch myfile.txt  <span style="color:#75715e"># Creates an empty file</span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Hello, Linux!&#34;</span> &gt; myfile.txt  <span style="color:#75715e"># Writes text to a file</span>
-</span></span><span style="display:flex;"><span>cat myfile.txt  <span style="color:#75715e"># Displays file content</span>
-</span></span><span style="display:flex;"><span>mv myfile.txt newfile.txt  <span style="color:#75715e"># Renames the file</span>
-</span></span><span style="display:flex;"><span>cp newfile.txt copyfile.txt  <span style="color:#75715e"># Copies the file</span>
-</span></span><span style="display:flex;"><span>rm copyfile.txt  <span style="color:#75715e"># Deletes the file</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch myfile.txt                <span style="color:#75715e"># Creates an empty file  </span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Hello, Linux!&#34;</span> &gt; myfile.txt  <span style="color:#75715e"># Writes text to a file  </span>
+</span></span><span style="display:flex;"><span>cat myfile.txt                  <span style="color:#75715e"># Displays file content  </span>
+</span></span><span style="display:flex;"><span>mv myfile.txt newfile.txt      <span style="color:#75715e"># Renames the file  </span>
+</span></span><span style="display:flex;"><span>cp newfile.txt copyfile.txt    <span style="color:#75715e"># Copies the file  </span>
+</span></span><span style="display:flex;"><span>rm copyfile.txt                <span style="color:#75715e"># Deletes the file</span>
 </span></span></code></pre></div><h3 id="editing-files-with-nano">Editing Files with Nano<a hidden class="anchor" aria-hidden="true" href="#editing-files-with-nano">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano myfile.txt
 </span></span></code></pre></div><ul>
 <li>Modify text and press <code>Ctrl + X</code>, then <code>Y</code> to save and exit.</li>
 </ul>
 <h3 id="searching-for-strings-in-files">Searching for Strings in Files<a hidden class="anchor" aria-hidden="true" href="#searching-for-strings-in-files">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -i <span style="color:#e6db74">&#34;search_term&#34;</span> filename.txt  <span style="color:#75715e"># Case-insensitive search</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -i <span style="color:#e6db74">&#34;search_term&#34;</span> filename.txt        <span style="color:#75715e"># Case-insensitive search  </span>
 </span></span><span style="display:flex;"><span>grep -r <span style="color:#e6db74">&#34;search_term&#34;</span> /path/to/directory  <span style="color:#75715e"># Recursive search</span>
 </span></span></code></pre></div><h2 id="user-and-process-management">User and Process Management<a hidden class="anchor" aria-hidden="true" href="#user-and-process-management">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>who  <span style="color:#75715e"># Lists currently logged-in users</span>
-</span></span><span style="display:flex;"><span>pinky -l $LOGNAME  <span style="color:#75715e"># Displays user details</span>
-</span></span><span style="display:flex;"><span>ps aux  <span style="color:#75715e"># Lists active processes</span>
-</span></span><span style="display:flex;"><span>kill &lt;PID&gt;  <span style="color:#75715e"># Terminates a process by PID</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>who                 <span style="color:#75715e"># Lists currently logged-in users  </span>
+</span></span><span style="display:flex;"><span>pinky -l $LOGNAME   <span style="color:#75715e"># Displays user details  </span>
+</span></span><span style="display:flex;"><span>ps aux              <span style="color:#75715e"># Lists active processes  </span>
+</span></span><span style="display:flex;"><span>kill &lt;PID&gt;          <span style="color:#75715e"># Terminates a process by PID</span>
 </span></span></code></pre></div><h2 id="networking-tools">Networking Tools<a hidden class="anchor" aria-hidden="true" href="#networking-tools">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ping -c <span style="color:#ae81ff">4</span> www.google.com  <span style="color:#75715e"># Sends ICMP packets to Google</span>
-</span></span><span style="display:flex;"><span>dig google.com  <span style="color:#75715e"># Checks DNS resolution</span>
-</span></span><span style="display:flex;"><span>traceroute google.com  <span style="color:#75715e"># Shows network path to destination</span>
-</span></span><span style="display:flex;"><span>sudo route -n  <span style="color:#75715e"># Displays routing table</span>
-</span></span><span style="display:flex;"><span>ip route  <span style="color:#75715e"># Displays current routes</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ping -c <span style="color:#ae81ff">4</span> www.google.com   <span style="color:#75715e"># Sends ICMP packets to Google  </span>
+</span></span><span style="display:flex;"><span>dig google.com             <span style="color:#75715e"># Checks DNS resolution  </span>
+</span></span><span style="display:flex;"><span>traceroute google.com      <span style="color:#75715e"># Shows network path to destination  </span>
+</span></span><span style="display:flex;"><span>sudo route -n              <span style="color:#75715e"># Displays routing table  </span>
+</span></span><span style="display:flex;"><span>ip route                   <span style="color:#75715e"># Displays current routes</span>
 </span></span></code></pre></div><h2 id="bash-scripting">Bash Scripting<a hidden class="anchor" aria-hidden="true" href="#bash-scripting">#</a></h2>
 <h3 id="writing-a-basic-script">Writing a Basic Script<a hidden class="anchor" aria-hidden="true" href="#writing-a-basic-script">#</a></h3>
 <p>Create a script that logs system uptime every 5 seconds:</p>
@@ -256,24 +251,23 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod +x monitor.sh
 </span></span><span style="display:flex;"><span>./monitor.sh
 </span></span></code></pre></div><h2 id="file-permissions">File Permissions<a hidden class="anchor" aria-hidden="true" href="#file-permissions">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l  <span style="color:#75715e"># View file permissions</span>
-</span></span><span style="display:flex;"><span>chmod +x script.sh  <span style="color:#75715e"># Grant execute permission to a script</span>
-</span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">644</span> myfile.txt  <span style="color:#75715e"># Set read/write for owner, read for others</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l                      <span style="color:#75715e"># View file permissions  </span>
+</span></span><span style="display:flex;"><span>chmod +x script.sh         <span style="color:#75715e"># Grant execute permission to a script  </span>
+</span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">644</span> myfile.txt       <span style="color:#75715e"># Set read/write for owner, read for others  </span>
 </span></span><span style="display:flex;"><span>chown user:group myfile.txt  <span style="color:#75715e"># Change file ownership</span>
 </span></span></code></pre></div><h2 id="fun-linux-commands">Fun Linux Commands<a hidden class="anchor" aria-hidden="true" href="#fun-linux-commands">#</a></h2>
 <p>Try these for fun:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cal <span style="color:#ae81ff">04</span> <span style="color:#ae81ff">1887</span>    <span style="color:#75715e"># Show the calendar for April 1887</span>
-</span></span><span style="display:flex;"><span>rev            <span style="color:#75715e"># Reverse text input</span>
-</span></span><span style="display:flex;"><span>toilet <span style="color:#e6db74">&#34;Hello&#34;</span> <span style="color:#75715e"># Print ASCII text in cool fonts (install with apt)</span>
-</span></span><span style="display:flex;"><span>sl             <span style="color:#75715e"># Watch a steam locomotive run across your screen</span>
-</span></span><span style="display:flex;"><span>cmatrix        <span style="color:#75715e"># See the Matrix rain effect</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cal <span style="color:#ae81ff">04</span> <span style="color:#ae81ff">1887</span>    <span style="color:#75715e"># Show the calendar for April 1887  </span>
+</span></span><span style="display:flex;"><span>rev            <span style="color:#75715e"># Reverse text input  </span>
+</span></span><span style="display:flex;"><span>toilet <span style="color:#e6db74">&#34;Hello&#34;</span> <span style="color:#75715e"># Print ASCII text in cool fonts (install with apt)  </span>
+</span></span><span style="display:flex;"><span>sl             <span style="color:#75715e"># Watch a steam locomotive run across your screen  </span>
+</span></span><span style="display:flex;"><span>cmatrix        <span style="color:#75715e"># See the Matrix rain effect  </span>
 </span></span><span style="display:flex;"><span>fortune        <span style="color:#75715e"># Get a random Linux fortune message</span>
 </span></span></code></pre></div><h2 id="submitting-your-work">Submitting Your Work<a hidden class="anchor" aria-hidden="true" href="#submitting-your-work">#</a></h2>
 <ul>
 <li>Include screenshots or recorded steps to demonstrate completion.</li>
 <li>Submit documentation via the designated submission platform, such as a course website, GitHub repository, or LMS.</li>
 </ul>
-<hr>
 
 
   </div>

@@ -1,5 +1,5 @@
 ---
-title: "Debugging, Syntax Checking, and Log Analysis Lab"
+title: "FSC-3: Debugging, Syntax Checking, and Log Analysis Lab"
 description: "Hands-on exercises to identify and troubleshoot syntax errors using logs and debugging mechanisms."
 date: 2025-02-09
 tags: ["Debugging", "Syntax Errors", "Log Analysis", "Troubleshooting"]
@@ -7,7 +7,7 @@ categories: ["Projects"]
 draft: false
 ---
 
-# Debugging, Syntax Checking, and Log Analysis Lab
+# FSC-3: Debugging, Syntax Checking, and Log Analysis Lab
 
 ## Recognizing Common Syntax Errors
 Syntax errors can cause scripts to fail, commands to be misinterpreted, and configurations to break. Below are common errors and ways to troubleshoot them.

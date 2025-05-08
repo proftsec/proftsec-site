@@ -4,10 +4,10 @@ description: "Understand the security challenges of operational technology (OT) 
 date: 2025-02-22
 tags: ["Cybersecurity", "ICS Security", "SCADA", "Critical Infrastructure", "Industrial Security"]
 categories: ["Projects"]
-menu:
-  main:
-    parent: "Projects"
-    weight: 6
+# menu:
+ # main:
+   # parent: "Projects"
+    # weight: 6
 weight: 6
 draft: false
 ---

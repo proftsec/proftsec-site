@@ -3,10 +3,10 @@ title: "Project 21: Simulating ICS & Protocol Exploration"
 description: "Gain foundational experience in industrial control systems by simulating an ICS environment and analyzing key protocols like Modbus and DNP3."
 date: 2025-03-22
 tags: ["ICS", "SCADA", "Modbus", "Industrial Protocols", "OT Security"]
-categories: ["OT & ICS Security"]
+categories: ["Projects"]
 menu:
   main:
-    parent: "OT & ICS Security"
+    parent: "Projects"
     weight: 1
 weight: 1
 draft: false
