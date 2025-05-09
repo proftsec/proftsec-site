@@ -1,8 +1,10 @@
 baseURL = "https://proftsec.info"
-paginate = 1000
 languageCode = "en-us"
 title = "Proftsec"
 theme = ""
+
+[pagination]
+  pagerSize = 1000
 
 [params]
   favicon = "favicon.ico"

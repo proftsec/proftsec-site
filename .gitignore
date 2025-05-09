@@ -1,2 +1,17 @@
-# Local Netlify folder
-.netlify
+# Hugo build output
+public/
+
+# Hugo cache
+resources/
+
+# Netlify local dev folder
+.netlify/
+
+# System files
+.DS_Store
+
+# VS Code settings (if applicable)
+.vscode/
+
+# Windows thumbnail cache
+Thumbs.db
