@@ -40,3 +40,5 @@ theme = ""
     name = "Podcasts"
     url = "/podcasts/"
     weight = 5
+
+[module]
