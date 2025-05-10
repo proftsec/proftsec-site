@@ -1,18 +1,18 @@
 ---
-title: "Project 9: Python for Cybersecurity"
+title: "ASP-1: Python for Cybersecurity"
 description: "Learn how to use Python for cybersecurity, including scripting, reconnaissance, and encoding techniques."
 date: 2025-02-22
 tags: ["Python", "Cybersecurity", "Automation", "Scripting"]
 categories: ["Advanced Security & Penetration Testing"]
 menu:
   main:
-    parent: "Advanced Security & Penetration Testing"
+    parent: "Projects"
     weight: 1
 weight: 1
 draft: false
 ---
 
-# Python for Cybersecurity
+# ASP-1: Python for Cybersecurity
 
 ## Overview
 Python is a powerful programming language widely used in cybersecurity. From automation to vulnerability scanning, Python enables security professionals to streamline tasks and develop custom security tools. This project introduces fundamental Python scripting techniques applicable to cybersecurity.

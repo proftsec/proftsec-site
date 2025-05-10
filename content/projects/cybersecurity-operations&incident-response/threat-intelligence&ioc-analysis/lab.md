@@ -1,5 +1,5 @@
 ---
-title: "Threat Intelligence & IOC Analysis"
+title: "COIR-2: Threat Intelligence & IOC Analysis"
 description: "Learn how to gather and analyze threat intelligence, identify Indicators of Compromise (IOCs), and apply them to cybersecurity defense strategies."
 date: 2025-03-08
 tags: ["Threat Intelligence", "IOC Analysis", "Cyber Threats", "Security Monitoring"]
@@ -7,7 +7,7 @@ categories: ["Cybersecurity Operations & Incident Response"]
 draft: false
 ---
 
-# Threat Intelligence & IOC Analysis
+# COIR-2: Threat Intelligence & IOC Analysis
 
 ## Overview
 Cyber threat intelligence enables security professionals to **identify**, **analyze**, and **respond** to cyber threats effectively. This lab will teach you how to collect, analyze, and apply **Indicators of Compromise (IOCs)** to security monitoring.
@@ -20,7 +20,7 @@ Cyber threat intelligence enables security professionals to **identify**, **anal
 You will need:
 - A **Linux or Windows VM**
 - Access to **AlienVault OTX**, **VirusTotal**, and **MITRE ATT&CK**
-- A SIEM tool (Wazuh, Splunk) installed for IOC analysis  
+- A SIEM tool (Wazuh, Splunk) installed for IOC analysis
 
 ---
 
@@ -74,7 +74,7 @@ To detect threats in a live environment, security analysts **apply IOCs** to SIE
 
 ---
 
-## **Final Submission**
+## Final Submission
 - Submit a **Google Doc** with:
   - Screenshots of **threat intelligence reports, IOC analysis, and SIEM alerts**.
   - A **short write-up** summarizing your findings.

@@ -1,5 +1,5 @@
 ---
-title: "Red Team Simulation & Adversarial Tactics Lab"
+title: "ASP-3: Red Team Simulation & Adversarial Tactics Lab"
 description: "Simulate a cyberattack using real-world adversarial tactics, including privilege escalation, lateral movement, and evasion."
 date: 2025-03-08
 tags: ["Red Team", "Lateral Movement", "Privilege Escalation", "Adversarial Simulation"]
@@ -7,7 +7,7 @@ categories: ["Advanced Security & Penetration Testing"]
 draft: false
 ---
 
-# Red Team Simulation & Adversarial Tactics Lab
+# ASP-3: Red Team Simulation & Adversarial Tactics Lab
 
 ## **Overview**
 This lab focuses on **offensive security techniques** used by adversaries to **compromise systems, escalate privileges, and move laterally** in a network. Students will use real-world tools to simulate cyberattacks in a controlled environment.
@@ -93,7 +93,7 @@ write-output $encoded
 
 #### **Step 2: Hide Your Tracks**
 ```powershell
-Remove-Item -Path "C:\Windows\Temp\malware.exe" -Force
+Remove-Item -Path "C:\\Windows\\Temp\\malware.exe" -Force
 ```
 ```bash
 echo "" > ~/.bash_history
@@ -108,5 +108,4 @@ echo "" > ~/.bash_history
   - A **short write-up** explaining each step.
 - Ensure all steps are properly documented.
 
-🚀 **Congratulations! You've completed the Red Team Simulation & Adversarial Tactics Lab!** 🚀
-
+🚀 **Congratulations! You've completed the ASP-3 Red Team Simulation & Adversarial Tactics Lab!** 🚀

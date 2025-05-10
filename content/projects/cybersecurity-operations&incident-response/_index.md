@@ -1,18 +1,14 @@
 ---
-title: "Cybersecurity Operations & Incident Response"
+title: "Cybersecurity Operations & Incident Response (COIR)"
 description: "Explore critical skills in security operations, threat detection, and incident response strategies."
 date: 2025-02-22
 tags: ["Cybersecurity", "Incident Response", "Threat Intelligence", "Forensics"]
 categories: ["Projects"]
-menu:
-  main:
-    parent: "Projects"
-    weight: 4
 weight: 4
 draft: false
 ---
 
-# Cybersecurity Operations & Incident Response
+# Cybersecurity Operations & Incident Response (COIR)
 
 ## Overview
 Cybersecurity professionals must be able to detect, analyze, and respond to security incidents effectively. This category focuses on the **fundamentals of security operations, threat intelligence, and incident response strategies** to mitigate cyber threats.
@@ -34,4 +30,4 @@ Students will gain experience using:
 - **Incident response playbooks** for handling cybersecurity events  
 - **Forensic analysis techniques** for malware and breach investigations  
 
-🔗 *Continue to hands-on projects within this category to enhance your skills in cybersecurity operations and incident response.*
+🔗 *Continue to hands-on projects within this category to enhance your skills in cybersecurity operations and incident response. Projects in this section are labeled COIR-1, COIR-2, and so on to reflect your progress through this domain.*

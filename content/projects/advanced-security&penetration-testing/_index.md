@@ -1,5 +1,5 @@
 ---
-title: "Advanced Security & Penetration Testing"
+title: "Advanced Security & Penetration Testing (ASP)"
 description: "Explore advanced offensive security techniques including penetration testing, exploit development, and security automation."
 date: 2025-02-22
 tags: ["Cybersecurity", "Penetration Testing", "Exploit Development", "Security Automation"]
@@ -12,7 +12,7 @@ weight: 3
 draft: false
 ---
 
-# Advanced Security & Penetration Testing
+# Advanced Security & Penetration Testing (ASP)
 
 ## Overview
 Penetration testing and exploit development are critical components of cybersecurity. This category introduces students to offensive security techniques, ethical hacking methodologies, and security automation with Python. These projects will help students develop hands-on skills in identifying vulnerabilities, crafting exploits, and automating security assessments.
@@ -35,3 +35,5 @@ Students will gain experience with:
 - **Reverse engineering** and binary exploitation techniques  
 
 🔗 *Continue to hands-on projects within this category to start building your skills.*
+
+Projects in this section are labeled ASP-1, ASP-2, ASP-3, and so on to reflect your progression through advanced topics.

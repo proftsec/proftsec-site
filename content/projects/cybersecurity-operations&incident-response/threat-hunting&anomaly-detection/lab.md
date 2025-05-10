@@ -1,5 +1,5 @@
 ---
-title: "Threat Hunting & Anomaly Detection Lab"
+title: "COIR-4: Threat Hunting & Anomaly Detection Lab"
 description: "Develop proactive threat hunting techniques to identify security anomalies and potential cyber threats."
 date: 2025-03-08
 tags: ["Threat Hunting", "Anomaly Detection", "Cyber Threats", "Security Monitoring"]
@@ -7,7 +7,7 @@ categories: ["Cybersecurity Operations & Incident Response"]
 draft: false
 ---
 
-# Threat Hunting & Anomaly Detection Lab
+# COIR-4: Threat Hunting & Anomaly Detection Lab
 
 ## **Overview**
 Threat hunting is a proactive cybersecurity approach that involves identifying potential security threats before they cause harm. This lab introduces students to **threat hunting techniques, anomaly detection strategies, and behavioral analysis methods** to detect advanced threats that evade traditional security tools.
@@ -94,4 +94,3 @@ index=security_logs sourcetype=windows_security_log
 - Ensure all steps are documented and properly labeled.
 
 🚀 **Congratulations! You've completed the Threat Hunting & Anomaly Detection Lab!** 🚀
-

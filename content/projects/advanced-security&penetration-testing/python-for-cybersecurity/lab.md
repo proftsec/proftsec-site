@@ -1,5 +1,5 @@
 ---
-title: "Python for Cybersecurity"
+title: "ASP-1: Python for Cybersecurity Lab"
 description: "Learn how to use Python for cybersecurity, including scripting, reconnaissance, and encoding techniques."
 date: 2025-02-22
 tags: ["Python", "Cybersecurity", "Automation", "Scripting"]
@@ -7,7 +7,7 @@ categories: ["Advanced Security & Penetration Testing"]
 draft: false
 ---
 
-# Python for Cybersecurity
+# ASP-1: Python for Cybersecurity Lab
 
 ## Overview
 Python is a powerful programming language widely used in cybersecurity. From automation to vulnerability scanning, Python enables security professionals to streamline tasks and develop custom security tools. This lab introduces fundamental Python scripting techniques applicable to cybersecurity.
@@ -161,9 +161,9 @@ python3 portscanner.py
 
 ---
 
-## **Final Submission**
+## Final Submission
 - Submit a **Google Doc** with screenshots of your completed tasks.
 - Ensure each screenshot has a **caption** explaining what was accomplished.
 - Follow submission guidelines as provided by your instructor.
 
-🚀 **Congratulations! You've completed Python for Cybersecurity!** 🚀
+🚀 **Congratulations! You've completed ASP-1: Python for Cybersecurity!** 🚀

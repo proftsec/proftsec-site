@@ -1,18 +1,14 @@
 ---
-title: "Project 13: Incident Detection with SIEM"
+title: "COIR-1: Incident Detection with SIEM"
 description: "Learn how to use Security Information and Event Management (SIEM) tools for log analysis, anomaly detection, and security monitoring."
 date: 2025-03-08
 tags: ["SIEM", "Log Analysis", "Threat Detection", "Security Monitoring"]
 categories: ["Cybersecurity Operations & Incident Response"]
-menu:
-  main:
-    parent: "Cybersecurity Operations & Incident Response"
-    weight: 1
 weight: 1
 draft: false
 ---
 
-# Incident Detection with SIEM
+# COIR-1: Incident Detection with SIEM
 
 ## Overview
 Security Information and Event Management (SIEM) platforms play a critical role in modern cybersecurity by centralizing log collection, analyzing security events, and detecting potential threats. This project introduces students to using SIEM tools for log analysis, anomaly detection, and real-time security monitoring.
