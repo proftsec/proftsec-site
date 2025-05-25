@@ -1,5 +1,5 @@
 ---
-title: "Zero Trust Architecture Lab"
+title: "ETR-3: Zero Trust Architecture Lab"
 description: "Implement a simulated Zero Trust environment using pfSense, Docker, and VPN tools to model identity-aware access and traffic segmentation."
 date: 2025-03-22
 tags: ["Zero Trust", "Network Security", "Segmentation", "Access Control"]
@@ -7,7 +7,7 @@ categories: ["Emerging Technologies & Research"]
 draft: false
 ---
 
-# Zero Trust Architecture Lab
+# ETR-3: Zero Trust Architecture Lab
 
 ## **Overview**
 This hands-on lab will help you implement a small-scale Zero Trust Architecture (ZTA) using open-source tools. You’ll simulate secure access control, segmentation, and monitoring between multiple internal services.

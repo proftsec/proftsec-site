@@ -1,18 +1,14 @@
 ---
-title: "Project 21: Simulating ICS & Protocol Exploration"
+title: "OT/ICS-1: Simulating ICS & Protocol Exploration"
 description: "Gain foundational experience in industrial control systems by simulating an ICS environment and analyzing key protocols like Modbus and DNP3."
 date: 2025-03-22
 tags: ["ICS", "SCADA", "Modbus", "Industrial Protocols", "OT Security"]
 categories: ["Projects"]
-menu:
-  main:
-    parent: "Projects"
-    weight: 1
 weight: 1
 draft: false
 ---
 
-# Simulating ICS & Protocol Exploration
+# OT/ICS-1: Simulating ICS & Protocol Exploration
 
 ## Overview
 Industrial Control Systems (ICS) rely on legacy protocols and purpose-built architectures that differ significantly from IT networks. In this project, students will simulate a basic ICS environment and examine how common protocols like Modbus and DNP3 function within it.

@@ -1,13 +1,9 @@
 ---
-title: "Project 17: Post-Quantum Cryptography Lab"
+title: "ETR-1: Post-Quantum Cryptography Lab"
 description: "Understand the impact of quantum computing on encryption and explore hands-on implementation of post-quantum cryptography using Python and open-source tools."
 date: 2025-03-18
 tags: ["Post-Quantum Cryptography", "Quantum Security", "Kyber", "Cryptography", "Hands-On Lab"]
 categories: ["Emerging Technologies & Research"]
-menu:
-  main:
-    parent: "Emerging Technologies & Research"
-    weight: 5
 weight: 5
 draft: false
 ---

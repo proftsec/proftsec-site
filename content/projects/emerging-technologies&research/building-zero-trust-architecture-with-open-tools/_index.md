@@ -1,18 +1,14 @@
 ---
-title: "Project 19: Building Zero Trust Architecture with Open Tools"
+title: "ETR-3: Building Zero Trust Architecture with Open Tools"
 description: "Explore the principles of Zero Trust Architecture (ZTA) and implement a simulated environment using open-source tools to model identity-based access and microsegmentation."
 date: 2025-03-22
 tags: ["Zero Trust", "Network Security", "Identity Management", "Microsegmentation"]
 categories: ["Emerging Technologies & Research"]
-menu:
-  main:
-    parent: "Emerging Technologies & Research"
-    weight: 7
 weight: 7
 draft: false
 ---
 
-# Building Zero Trust Architecture with Open Tools
+# ETR-3: Building Zero Trust Architecture with Open Tools
 
 ## Overview
 Zero Trust Architecture (ZTA) is a modern security model that assumes no implicit trust—whether inside or outside the network perimeter. This project guides students through the principles of Zero Trust and helps them simulate a secure, identity-driven environment using open tools like pfSense, Docker, and OpenVPN.

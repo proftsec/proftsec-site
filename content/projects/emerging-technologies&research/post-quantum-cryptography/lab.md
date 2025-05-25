@@ -1,5 +1,5 @@
 ---
-title: "Post-Quantum Cryptography Lab Instructions"
+title: "ETR-1: Post-Quantum Cryptography Lab"
 description: "Implement and analyze post-quantum encryption and signature schemes using Kyber and Dilithium."
 date: 2025-03-18
 tags: ["Post-Quantum Cryptography", "Quantum Threats", "Kyber", "Dilithium"]
@@ -7,7 +7,7 @@ categories: ["Emerging Technologies & Research"]
 draft: false
 ---
 
-# Post-Quantum Cryptography Lab Instructions
+# ETR-1: Post-Quantum Cryptography Lab
 
 ## **Overview**
 In this lab, you'll implement and analyze post-quantum encryption techniques using **Kyber** and **Dilithium**, two NIST-recommended algorithms for quantum-resistant security. The lab includes working with key exchange, digital signatures, and comparing algorithm performance.

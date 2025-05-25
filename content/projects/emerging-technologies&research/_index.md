@@ -1,18 +1,14 @@
 ---
-title: "Emerging Technologies & Research"
+title: "Emerging Technologies & Research (ETR)"
 description: "Stay ahead of the curve with research-driven insights into AI, blockchain, quantum security, and cutting-edge cybersecurity innovations."
 date: 2025-02-22
 tags: ["Cybersecurity", "AI", "Blockchain", "Quantum Security", "Emerging Technologies"]
 categories: ["Projects"]
-menu:
-  main:
-    parent: "Projects"
-    weight: 5
 weight: 5
 draft: false
 ---
 
-# Emerging Technologies & Research
+# Emerging Technologies & Research (ETR)
 
 ## Overview
 The cybersecurity landscape is constantly evolving with **new technologies and emerging threats**. This category explores **AI-driven security, blockchain applications, quantum computing risks, and next-generation cybersecurity research**.
@@ -34,4 +30,4 @@ Students will gain experience with:
 - **Post-quantum cryptography techniques**  
 - **Threat modeling and security forecasting** using real-world case studies  
 
-🔗 *Continue to hands-on projects within this category to explore the latest innovations in cybersecurity research and emerging technologies.*
+🔗 *Continue to hands-on projects within this category to explore the latest innovations in cybersecurity research and emerging technologies. Projects in this section are labeled ETR-1, ETR-2, and so on to reflect your progress through this domain.*

@@ -1,5 +1,5 @@
 ---
-title: "AI & ML for Threat Detection Lab"
+title: "ETR-2: AI & ML for Threat Detection Lab"
 description: "Build and test anomaly detection models using Python and machine learning libraries to identify cybersecurity threats in log data."
 date: 2025-03-22
 tags: ["Artificial Intelligence", "Machine Learning", "Anomaly Detection", "Security Operations"]
@@ -7,7 +7,7 @@ categories: ["Emerging Technologies & Research"]
 draft: false
 ---
 
-# AI & ML for Threat Detection Lab
+# ETR-2: AI & ML for Threat Detection Lab
 
 ## **Overview**
 In this lab, you'll apply machine learning techniques to detect anomalies in log data—mimicking how AI supports SOC teams. You'll use Python tools such as scikit-learn or PyCaret to train unsupervised models and compare results to traditional rule-based detection.

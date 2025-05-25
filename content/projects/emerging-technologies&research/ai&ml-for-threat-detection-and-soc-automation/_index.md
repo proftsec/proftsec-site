@@ -1,13 +1,9 @@
 ---
-title: "Project 18: AI & ML for Threat Detection and SOC Automation"
+title: "ETR-2: AI & ML for Threat Detection and SOC Automation"
 description: "Explore how artificial intelligence and machine learning are transforming threat detection and security operations through hands-on experimentation with anomaly detection models."
 date: 2025-03-22
 tags: ["Artificial Intelligence", "Machine Learning", "SOC Automation", "Anomaly Detection"]
 categories: ["Emerging Technologies & Research"]
-menu:
-  main:
-    parent: "Emerging Technologies & Research"
-    weight: 6
 weight: 6
 draft: false
 ---
