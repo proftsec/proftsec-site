@@ -50,7 +50,7 @@ If you'd like to reach out, verify you're human first:
 📧 <span id="email-container"></span>
 
 <div id="recaptcha-container">
-    <div class="g-recaptcha" data-sitekey="6Ldjwd8qAAAAADCTPbg_Ck0by47f2VNlqv0wpM3O" data-callback="showEmail"></div>
+    <div class="g-recaptcha" data-sitekey="6LcKE0orAAAAAOE8SrIPW8_zWO9iOQ6Ht3U13Gss" data-callback="showEmail"></div>
 </div>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
