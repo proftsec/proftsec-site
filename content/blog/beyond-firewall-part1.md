@@ -1,6 +1,6 @@
 ---
 
-title: "Beyond the Firewall: Why Soft Skills Make or Break Cyber Careers"
+title: "Beyond the Firewall: Part 1 –  Why Soft Skills Make or Break Cyber Careers"
 date: 2025-06-03
 description: "Part 1 of our series on soft skills in cybersecurity and IT education. This post explains why communication, empathy, and judgment are just as essential as technical ability—and how to start embedding them into learning environments."
 tags:
@@ -15,7 +15,7 @@ featured_image: "/images/cybersecurity-workstation.png"
 
 ---
 
-# Beyond the Firewall: Why Soft Skills Make or Break Cyber Careers
+# Beyond the Firewall:  Part 1 – Why Soft Skills Make or Break Cyber Careers
 
 ## Introduction
 

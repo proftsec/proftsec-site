@@ -1,7 +1,7 @@
 ---
 
-title: "Beyond the Firewall: Teaching Technical Communication in Cybersecurity"
-date: 2025-06-03
+title: "Beyond the Firewall: Part 2 –  Teaching Technical Communication in Cybersecurity"
+date: 2025-06-04
 description: "Part 2 of our soft skills series explores how technical communication transforms cybersecurity education and operations—plus how to embed it into existing IT lessons."
 tags:
   - Soft Skills
@@ -15,7 +15,7 @@ featured_image: "/images/cybersecurity-workstation.png"
 
 ---
 
-# Beyond the Firewall: Teaching Technical Communication in Cybersecurity
+# Beyond the Firewall: Part 2 –  Teaching Technical Communication in Cybersecurity
 
 ## Introduction
 
