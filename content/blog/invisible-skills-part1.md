@@ -1,6 +1,7 @@
 ---
 
 title: "Making Skills Visible in Cybersecurity — Part 1: Skills You Can’t See on a Resume"
+date: 2025-06-17
 description: "Part 1 of our series on building visibility in cybersecurity careers. In this post, we break down the critical—but often invisible—skills that don't show up on a traditional resume, and why showcasing them matters more than ever."
 tags:
 
