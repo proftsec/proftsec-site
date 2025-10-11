@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400">
+<rect width="100%" height="100%" fill="#0f1b2d"/>
+<path d="M 700.00,140.00 A 560.00,560.00 0 0 1 1095.98,304.02 L 954.56,445.44 M 954.56,445.44 A 360.00,360.00 0 0 0 700.00,340.00 Z" fill="#d4a657" stroke="#0f1b2d" stroke-width="12"/>
+<path d="M 700.00,240.00 A 460.00,460.00 0 0 1 1025.27,374.73" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+<text x="864.55" y="302.73" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Agentic Governance</text>
+<polygon points="1095.27,334.43 1056.38,313.92 1074.77,295.53" fill="#ffffff" opacity="0.95"/>
+<path d="M 1095.98,304.02 A 560.00,560.00 0 0 1 1260.00,700.00 L 1060.00,700.00 M 1060.00,700.00 A 360.00,360.00 0 0 0 954.56,445.44 Z" fill="#1aa3a3" stroke="#0f1b2d" stroke-width="12"/>
+<path d="M 1025.27,374.73 A 460.00,460.00 0 0 1 1160.00,700.00" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+<text x="1097.27" y="535.45" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Identity &amp; Zero Trust</text>
+<polygon points="1238.00,721.00 1225.00,679.00 1251.00,679.00" fill="#ffffff" opacity="0.95"/>
+<path d="M 1260.00,700.00 A 560.00,560.00 0 0 1 1095.98,1095.98 L 954.56,954.56 M 954.56,954.56 A 360.00,360.00 0 0 0 1060.00,700.00 Z" fill="#d4a657" stroke="#0f1b2d" stroke-width="12"/>
+<path d="M 1160.00,700.00 A 460.00,460.00 0 0 1 1025.27,1025.27" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+<text x="1097.27" y="864.55" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Data Sovereignty</text>
+<polygon points="1065.57,1095.27 1086.08,1056.38 1104.47,1074.77" fill="#ffffff" opacity="0.95"/>
+<path d="M 1095.98,1095.98 A 560.00,560.00 0 0 1 700.00,1260.00 L 700.00,1060.00 M 700.00,1060.00 A 360.00,360.00 0 0 0 954.56,954.56 Z" fill="#1aa3a3" stroke="#0f1b2d" stroke-width="12"/>
+<path d="M 1025.27,1025.27 A 460.00,460.00 0 0 1 700.00,1160.00" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+<text x="864.55" y="1097.27" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Security Mesh</text>
+<polygon points="679.00,1238.00 721.00,1225.00 721.00,1251.00" fill="#ffffff" opacity="0.95"/>
+<path d="M 700.00,1260.00 A 560.00,560.00 0 0 1 304.02,1095.98 L 445.44,954.56 M 445.44,954.56 A 360.00,360.00 0 0 0 700.00,1060.00 Z" fill="#d4a657" stroke="#0f1b2d" stroke-width="12"/>
+<path d="M 700.00,1160.00 A 460.00,460.00 0 0 1 374.73,1025.27" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+<text x="535.45" y="1079.27" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Continuous Threat</text>
+<text x="535.45" y="1113.27" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Exposure</text>
+<polygon points="304.73,1065.57 343.62,1086.08 325.23,1104.47" fill="#ffffff" opacity="0.95"/>
+<path d="M 304.02,1095.98 A 560.00,560.00 0 0 1 140.00,700.00 L 340.00,700.00 M 340.00,700.00 A 360.00,360.00 0 0 0 445.44,954.56 Z" fill="#1aa3a3" stroke="#0f1b2d" stroke-width="12"/>
+<path d="M 374.73,1025.27 A 460.00,460.00 0 0 1 240.00,700.00" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+<text x="302.73" y="864.55" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Operations Automation</text>
+<polygon points="162.00,679.00 175.00,721.00 149.00,721.00" fill="#ffffff" opacity="0.95"/>
+<path d="M 140.00,700.00 A 560.00,560.00 0 0 1 304.02,304.02 L 445.44,445.44 M 445.44,445.44 A 360.00,360.00 0 0 0 340.00,700.00 Z" fill="#d4a657" stroke="#0f1b2d" stroke-width="12"/>
+<path d="M 240.00,700.00 A 460.00,460.00 0 0 1 374.73,374.73" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+<text x="302.73" y="535.45" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Privacy &amp; Compliance</text>
+<polygon points="334.43,304.73 313.92,343.62 295.53,325.23" fill="#ffffff" opacity="0.95"/>
+<path d="M 304.02,304.02 A 560.00,560.00 0 0 1 700.00,140.00 L 700.00,340.00 M 700.00,340.00 A 360.00,360.00 0 0 0 445.44,445.44 Z" fill="#1aa3a3" stroke="#0f1b2d" stroke-width="12"/>
+<path d="M 374.73,374.73 A 460.00,460.00 0 0 1 700.00,240.00" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+<text x="535.45" y="284.73" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Edge &amp; Endpoint</text>
+<text x="535.45" y="318.73" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-anchor="middle">Resilience</text>
+<polygon points="721.00,162.00 679.00,175.00 679.00,149.00" fill="#ffffff" opacity="0.95"/>
+<text x="700" y="694" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="62" text-anchor="middle">AIDSCOPE</text>
+<text x="700" y="740" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="28" text-anchor="middle">Framework</text>
+<text x="700" y="778" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="24" text-anchor="middle">Modern Cyber Resilience</text>
+</svg>
